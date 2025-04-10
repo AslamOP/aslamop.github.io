@@ -3,143 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mocha Morn – Coffee Alarm Clock</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>MochaMorn – Coffee Alarm Clock</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: #fff9f5;
       margin: 0;
-      padding: 0;
-      animation: fadeIn 1s ease-in;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; } to { opacity: 1; }
-    }
-    header {
-      background: #5e3b3b;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin-top: 10px;
-      font-style: italic;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    h2 {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fcf7f1;
       color: #4b2e2e;
     }
+    header {
+      background-color: #6b4f3b;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #d9c4b1;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4b2e2e;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #8b5c3d;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .section h2 {
+      color: #5b3a29;
+      margin-bottom: 15px;
+    }
     .price {
-      font-size: 1.6em;
+      font-size: 1.8em;
       color: #b84d00;
     }
-    ul {
-      padding-left: 20px;
-    }
-    .buy-button, .alt-button {
+    .buy-button {
       display: inline-block;
-      background: #4b2e2e;
+      padding: 15px 30px;
+      margin-top: 20px;
+      background-color: #5a3928;
       color: white;
-      padding: 15px 25px;
-      font-size: 1em;
+      font-size: 1.1em;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 10px;
-      margin-top: 15px;
-      transition: 0.3s ease;
     }
-    .buy-button:hover, .alt-button:hover {
-      background: #7a4f4f;
+    .buy-button:hover {
+      background-color: #7a4f3a;
     }
-    .product-image {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      display: block;
-      margin: 20px auto;
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
     }
-    .qr {
-      width: 200px;
-      margin: 20px auto;
-      display: block;
+    .images img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     footer {
-      background: #f2e8e1;
+      background-color: #eee1d4;
       text-align: center;
       padding: 20px;
+      color: #5a3928;
       font-size: 0.9em;
-      color: #444;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Mocha Morn</h1>
-    <p>Wake up to the perfect brew – every morning</p>
+    <h1>MochaMorn</h1>
+    <p>Your perfect morning brew, just in time ☕</p>
   </header>
 
-  <div class="container">
-    <img src="https://via.placeholder.com/400x250?text=Mocha+Morn+Product+Image" alt="Mocha Morn Coffee Clock" class="product-image">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="user-manual.html">User Manual</a>
+    <a href="warranty.html">Warranty</a>
+    <a href="contact.html">Contact</a>
+    <a href="payment.html">Payment</a>
+  </nav>
 
-    <div class="section">
-      <h2>About the Product</h2>
-      <p>Mocha Morn is a smart alarm clock that brews coffee, tea, or any instant beverage right when your alarm goes off.</p>
-      <ul>
-        <li>Automated brewing at alarm time</li>
-        <li>Supports coffee, tea, and instant drinks</li>
-        <li>Energy-efficient & compact design</li>
-        <li>Easy to clean and maintain</li>
-      </ul>
-    </div>
+  <div class="hero">
+    <img src="mocha1.jpg" alt="MochaMorn Front View">
+  </div>
 
-    <div class="section">
-      <h2>Price</h2>
-      <p class="price">₹4,000 – ₹6,000</p>
-    </div>
+  <div class="section">
+    <h2>About MochaMorn</h2>
+    <p>MochaMorn is a beautifully designed alarm clock that brews fresh coffee or tea at your wake-up time. Simple, stylish, and smart.</p>
+    <ul>
+      <li>Automated brewing with alarm</li>
+      <li>Supports tea, coffee, and instant drinks</li>
+      <li>Compact and efficient</li>
+      <li>1-year warranty</li>
+    </ul>
+    <p class="price">Only ₹4999</p>
+    <a class="buy-button" href="payment.html">Buy Now</a>
+  </div>
 
-    <div class="section">
-      <h2>Buy Now via UPI</h2>
-      <p><strong>UPI ID: aslamopcoder@okicici</strong></p>
-      <a class="buy-button" href="upi://pay?pa=aslamopcoder@okicici&pn=MochaMorn&cu=INR&am=5000">Pay ₹5000 via UPI</a>
-      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=aslamopcoder@okicici&pn=MochaMorn&cu=INR&am=5000" alt="UPI QR Code">
-      <p>Scan the QR above to pay securely.</p>
-    </div>
-
-    <div class="section">
-      <h2>Need Other Payment Options?</h2>
-      <a class="alt-button" href="mailto:support@mochamorn.com?subject=I want to buy Mocha Morn">Request via Email</a>
-      <a class="alt-button" href="https://wa.me/917598809727https://wa.me/917598809727?text=I0000?text=I want to buy Mocha Morn">Chat on WhatsApp</a>
-    </div>
-
-    <div class="section">
-      <h2>Warranty & Support</h2>
-      <p>1-year warranty on manufacturing defects. For support:</p>
-      <ul>
-        <li>Email: support@mochamorn.com</li>
-        <li>Phone: +966 69 696969</li>
-        <li>Website: https://mochamorn.github.io</li>
-      </ul>
-    </div>
+  <div class="section images">
+    <img src="mocha2.jpg" alt="MochaMorn Brewing">
+    <img src="warrenty.jpg" alt="Warranty Certificate">
+    <img src="warrenty1.jpg" alt="Warranty Stamp">
   </div>
 
   <footer>
-    &copy; 2025 Mocha Morn. Designed by Team Mocha.
+    &copy; 2025 MochaMorn · Designed with love ☕ | +91 7598809727
   </footer>
 
 </body>
