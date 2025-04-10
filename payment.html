@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MochaMorn – Secure Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fcf7f1;
+      color: #4b2e2e;
+    }
+    header {
+      background-color: #6b4f3b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #d9c4b1;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #4b2e2e;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #5b3a29;
+    }
+    .price-tag {
+      font-size: 2em;
+      color: #b84d00;
+      margin: 10px 0;
+    }
+    .upi-info {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    .qr-code {
+      margin: 30px auto;
+      width: 220px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .confirm-button {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #5a3928;
+      color: white;
+      padding: 14px 28px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .confirm-button:hover {
+      background-color: #7a4f3a;
+    }
+    footer {
+      background-color: #eee1d4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Secure Payment – MochaMorn</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="user-manual.html">User Manual</a>
+    <a href="warranty.html">Warranty</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h2>Pay ₹4999 to order your MochaMorn</h2>
+    <p class="upi-info">Scan the QR or use UPI ID: <strong>aslamopcoder@okicici</strong></p>
+    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=aslamopcoder@okicici&pn=MochaMorn&am=4999&cu=INR" alt="MochaMorn UPI QR Code">
+    <br/>
+    <a class="confirm-button" href="https://wa.me/917598809727?text=I%20have%20paid%20₹4999%20for%20MochaMorn">✅ I have paid – Confirm via WhatsApp</a>
+  </main>
+  <footer>
+    &copy; 2025 MochaMorn · Crafted with love · +91 7598809727
+  </footer>
+</body>
+</html>
