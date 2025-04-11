@@ -1,101 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MochaMorn – Secure Payment</title>
-  <link rel="icon" type="image/jpg" href="favicon.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MochaMorn – Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Quicksand', sans-serif;
-      background-color: #fcf7f1;
-      color: #4b2e2e;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1a1d, #4e4e50);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
     header {
-      background-color: #6b4f3b;
-      color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
+      background: #0f0f10;
     }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #00ffd5;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
     nav {
-      background-color: #d9c4b1;
-      padding: 10px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
     }
+
     nav a {
-      color: #4b2e2e;
+      color: #ffffffcc;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
+
+    nav a:hover {
+      color: #00ffd5;
+    }
+
+    .payment-section {
       text-align: center;
+      padding: 50px 20px;
+      animation: fadeIn 2s ease-in-out;
     }
-    h2 {
-      color: #5b3a29;
+
+    .payment-section h2 {
+      font-size: 2rem;
+      color: #00ffd5;
+      margin-bottom: 20px;
     }
-    .price-tag {
-      font-size: 2em;
-      color: #b84d00;
-      margin: 10px 0;
+
+    .payment-section p {
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
     }
-    .upi-info {
-      margin-top: 20px;
-      font-size: 1.2em;
+
+    .payment-section .price {
+      font-size: 2.5rem;
+      color: #00ffd5;
+      margin: 30px 0 10px 0;
+      text-shadow: 0 0 10px #00ffd5;
     }
-    .qr-code {
-      margin: 30px auto;
-      width: 220px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .confirm-button {
+
+    .upi-id {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 10px 20px;
       display: inline-block;
-      margin-top: 30px;
-      background-color: #5a3928;
-      color: white;
-      padding: 14px 28px;
-      font-size: 1.1em;
-      border: none;
       border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 30px;
     }
-    .confirm-button:hover {
-      background-color: #7a4f3a;
-    }
+
     footer {
-      background-color: #eee1d4;
-      text-align: center;
+      margin-top: 50px;
       padding: 20px;
-      margin-top: 40px;
+      text-align: center;
+      color: #999;
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 0.9rem;
+    }
+
+    footer img {
+      width: 160px;
+      margin-top: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffd5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Secure Payment – MochaMorn</h1>
+    <h1>MochaMorn</h1>
+    <p>Redefining Mornings with Smart Brews ☕</p>
   </header>
+
   <nav>
     <a href="index.html">Home</a>
+    <a href="about.html">About</a>
     <a href="user-manual.html">User Manual</a>
-    <a href="warranty.html">Warranty</a>
+    <a href="feedback.html">Feedback</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main>
-    <h2>Pay ₹4999 to order your MochaMorn</h2>
-    <p class="upi-info">Scan the QR or use UPI ID: <strong>aslamopcoder@okicici</strong></p>
-    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=aslamopcoder@okicici&pn=MochaMorn&am=4999&cu=INR" alt="MochaMorn UPI QR Code">
-    <br/>
-    <a class="confirm-button" href="https://wa.me/917598809727?text=I%20have%20paid%20₹4999%20for%20MochaMorn">✅ I have paid – Confirm via WhatsApp</a>
-  </main>
+
+  <div class="payment-section">
+    <h2>Buy MochaMorn Now</h2>
+    <p>Make your payment using UPI below and bring the smart aroma of coffee to your mornings.</p>
+    <div class="price">₹4999</div>
+    <div class="upi-id">UPI ID: <strong>aslamopcoder@okicici</strong></div>
+    <p>Scan the QR below using any UPI-enabled app to complete your payment.</p>
+  </div>
+
   <footer>
-    &copy; 2025 MochaMorn · Crafted with love · +91 7598809727
+    <p>&copy; 2025 MochaMorn | Designed by Team VDABAV | All Rights Reserved</p>
+    <img src="https://media-hosting.imagekit.io/add8c73c665a4581/upi_qr_mochamorn.png?Expires=1839005028&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=IfhYkgd2fOQb7AEuUARQ2cR0xR7jWvNZx5UtclHjfLv3vozSWxL9Q9MjcEOoNsxX~sGF16u0FA6vRX04G78aEhEyHpAs8rLZfdChS-meE1lYrVDWGgd9u-XMM5xPs4CCsvaHtmxgpYcJTER3pkhYnfLSykuDZMTqgYEonqiJz~f7IWQC7vi2Xh8hdQdBTadi0CI3Mh4I4kmGISUhyZyDQiLJAYx5ZPkZujaersNvDA9xuC31~FBoCs8-v0H8O0~OeVQTUrNUyhjwoSotD6MnZf-w~hA0hrXpUuYMjLNkW1wcTDD62a5zChEIf5BW9SIPczDPfKJtOT8zhoNAsY1RRQ__" alt="UPI QR Code">
   </footer>
+
 </body>
 </html>
