@@ -1,145 +1,166 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | MochaMorn</title>
-  <link rel="icon" type="image/jpg" href="favicon.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <title>About – Team VADABAV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Quicksand', sans-serif;
-      background-color: #fcf7f1;
-      color: #4b2e2e;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1a1d, #4e4e50);
+      color: #fff;
+    }
+
     header {
-      background-color: #6b4f3b;
-      color: white;
       padding: 30px 20px;
       text-align: center;
+      background: #0f0f10;
     }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #00ffd5;
+      text-shadow: 2px 2px 10px #000;
+    }
+
     nav {
-      background-color: #d9c4b1;
-      padding: 10px 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #4b2e2e;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #8b5c3d;
-    }
-    .section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .section h2 {
-      color: #5b3a29;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .team {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      gap: 25px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+    }
+
+    nav a {
+      color: #ffffffcc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffd5;
+    }
+
+    .team-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-size: 2rem;
+      color: #00ffd5;
+      margin-bottom: 30px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
+      padding: 0 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    .member {
-      background-color: #fff;
+
+    .member-card {
+      background: rgba(255, 255, 255, 0.05);
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      width: 280px;
-      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 213, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .member h3 {
-      margin: 0.5rem 0 0.2rem;
-      color: #4b2e2e;
+
+    .member-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px #00ffd5;
     }
-    .member p {
-      margin: 0.2rem 0;
+
+    .member-card h3 {
+      font-size: 1.4rem;
+      color: #00ffd5;
     }
-    .member em {
-      color: #7a4e3a;
-      font-style: italic;
+
+    .member-card p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-top: 5px;
     }
-    .developer-note {
-      text-align: center;
-      margin-top: 50px;
+
+    .dev-label {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #f9b857;
       font-weight: bold;
-      color: #7a4e3a;
+      text-shadow: 0 0 5px #f9b857;
     }
+
     footer {
-      background-color: #eee1d4;
-      text-align: center;
+      margin-top: 50px;
       padding: 20px;
-      color: #5a3928;
-      font-size: 0.9em;
-      margin-top: 60px;
+      text-align: center;
+      color: #999;
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>About the Team</h1>
-    <p>The minds behind MochaMorn ☕</p>
+    <h1>Team VADABAV</h1>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
+    <a href="payment.html">Buy Now</a>
     <a href="user-manual.html">User Manual</a>
-    <a href="warranty.html">Warranty</a>
+    <a href="feedback.html">Feedback</a>
     <a href="contact.html">Contact</a>
-    <a href="payment.html">Payment</a>
   </nav>
 
-  <div class="section">
-    <h2>Team VADABAV</h2>
-
-    <div class="team">
-      <div class="member">
+  <section class="team-section">
+    <h2>Meet the Team</h2>
+    <div class="team-grid">
+      <div class="member-card">
         <h3>Aslam S</h3>
-        <p>Roll No: 128009020</p>
-        <p><strong>Webpage Developer</strong></p>
+        <p>128009020</p>
+        <div class="dev-label">Webpage Developer</div>
       </div>
-      <div class="member">
+      <div class="member-card">
         <h3>Sriram Shivakumar</h3>
-        <p>Roll No: 128004261</p>
-        <p><em>Topper 1 🧠</em></p>
+        <p>128004261</p>
       </div>
-      <div class="member">
+      <div class="member-card">
         <h3>Vegnesh N</h3>
-        <p>Roll No: 128181050</p>
-        <p><em>(Vignesh... but with an E 😎)</em></p>
+        <p>128181050</p>
       </div>
-      <div class="member">
+      <div class="member-card">
         <h3>Dinesh S</h3>
-        <p>Roll No: 128161011</p>
-        <p><em>💤💤</em></p>
+        <p>128161011</p>
       </div>
-      <div class="member">
+      <div class="member-card">
         <h3>Aravindhan R K</h3>
-        <p>Roll No: 128009017</p>
-        <p><em>Topper 2 📚</em></p>
+        <p>128009017</p>
       </div>
-      <div class="member">
+      <div class="member-card">
         <h3>Balaji S</h3>
-        <p>Roll No: 128010014</p>
-        <p><em>Allahu Akbar 💥</em></p>
+        <p>128010014</p>
       </div>
     </div>
-
-    <p class="developer-note">Designed & Coded by <strong>Aslam S</strong> with ❤️</p>
-  </div>
+  </section>
 
   <footer>
-    &copy; 2025 MochaMorn · Designed with love ☕ by team VADABAV | +91 7598809727
+    <p>&copy; 2025 Team VADABAV | All Rights Reserved</p>
   </footer>
 
 </body>
