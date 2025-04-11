@@ -1,90 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MochaMorn – Warranty Registration</title>
-  <link rel="icon" type="image/jpg" href="favicon.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="favicon.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Quicksand', sans-serif;
-      background-color: #fcf7f1;
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
       margin: 0;
-      color: #4b2e2e;
+      color: #0ff;
     }
     header {
-      background-color: #6b4f3b;
-      color: white;
+      background-color: #000;
       text-align: center;
-      padding: 20px;
+      padding: 30px;
+      box-shadow: 0 0 10px #0ff;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #0ff;
+      text-shadow: 0 0 12px #0ff, 0 0 20px #0ff;
     }
     nav {
-      background-color: #d9c4b1;
-      padding: 10px;
+      background-color: #020202;
       text-align: center;
+      padding: 15px;
+      box-shadow: 0 0 8px #0ff;
     }
     nav a {
-      color: #4b2e2e;
+      color: #0ff;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 15px;
       font-weight: bold;
+      text-shadow: 0 0 5px #0ff;
+    }
+    nav a:hover {
+      color: #fff;
     }
     main {
       max-width: 800px;
       margin: auto;
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
     h2 {
-      margin-bottom: 10px;
-      color: #5b3a29;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
     }
     form {
-      background: #fffaf4;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: #020202;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #0ff;
     }
     label {
       display: block;
-      margin-top: 15px;
+      margin-top: 20px;
+      font-weight: bold;
     }
     input, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-top: 5px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
+      border-radius: 8px;
+      border: none;
+      background: #111;
+      color: #0ff;
+      box-shadow: inset 0 0 5px #0ff;
       font-family: inherit;
     }
     button {
-      margin-top: 20px;
-      background-color: #5a3928;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 8px;
+      margin-top: 25px;
+      background-color: transparent;
+      border: 2px solid #0ff;
+      color: #0ff;
+      padding: 12px 30px;
       font-size: 1em;
+      border-radius: 10px;
       cursor: pointer;
+      transition: 0.3s ease;
     }
     button:hover {
-      background-color: #7a4f3a;
+      background-color: #0ff;
+      color: #000;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
     }
     .images {
-      margin-top: 40px;
+      margin-top: 50px;
       text-align: center;
     }
     .images img {
       width: 300px;
-      margin: 10px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 15px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #0ff;
     }
     footer {
-      background-color: #eee1d4;
+      background-color: #020202;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      margin-top: 60px;
+      color: #0ff;
+      text-shadow: 0 0 6px #0ff;
     }
   </style>
 </head>
