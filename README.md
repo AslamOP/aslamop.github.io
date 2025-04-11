@@ -1,4 +1,4 @@
-# mochamorn.github.io
+# MochaMorn
 # Mocha Morn – Coffee Alarm Clock
 
 **Wake up to the perfect brew!**  
