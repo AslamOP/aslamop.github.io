@@ -3,98 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MochaMorn Feedback</title>
+  <title>Thank You – MochaMorn</title>
+  <link rel="icon" type="image/jpg" href="favicon.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5efe6;
-      color: #333;
       margin: 0;
-      padding: 20px;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at center, #000 60%, #020d0d 100%);
+      color: #0ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 30px 20px;
     }
     h1 {
-      text-align: center;
-      color: #6b4f3b;
+      font-size: 3em;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+      animation: pulse 2s infinite alternate;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background-color: #fff8f0;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    @keyframes pulse {
+      0% {
+        text-shadow: 0 0 10px #0ff;
+      }
+      100% {
+        text-shadow: 0 0 25px #0ff;
+      }
     }
-    .feedback-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 30px;
-    }
-    .feedback-card {
-      flex: 1 1 400px;
-      text-align: center;
-    }
-    .feedback-card img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .feedback-card h3 {
-      margin: 10px 0;
-      color: #5b3a29;
-    }
-    .experience {
-      margin-top: 30px;
-      text-align: center;
-    }
-    textarea {
-      width: 90%;
-      height: 100px;
-      padding: 10px;
-      font-size: 1em;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    button {
+    p {
+      font-size: 1.2em;
       margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #6b4f3b;
-      color: white;
-      font-size: 1em;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
+      text-shadow: 0 0 6px #0ff;
     }
-    button:hover {
-      background-color: #8c6550;
+    a {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 12px 30px;
+      background-color: transparent;
+      border: 2px solid #0ff;
+      border-radius: 10px;
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+    a:hover {
+      background-color: #0ff;
+      color: black;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
     }
   </style>
 </head>
 <body>
-
-  <div class="container">
-    <h1>My MochaMorn Transformation</h1>
-
-    <div class="feedback-section">
-      <div class="feedback-card">
-        <h3>Before the Product</h3>
-        <img src="before.jpeg" alt="Before MochaMorn">
-      </div>
-      <div class="feedback-card">
-        <h3>After the Product</h3>
-        <img src="after.jpeg" alt="After MochaMorn">
-      </div>
-    </div>
-
-    <div class="experience">
-      <h2>Share Your Experience</h2>
-      <textarea placeholder="Tell us how MochaMorn changed your mornings..."></textarea>
-      <br>
-      <button>Submit Feedback</button>
-    </div>
-  </div>
-
+  <h1>Thank You!</h1>
+  <p>Your submission has been successfully received.</p>
+  <p>We’ll get back to you soon. Stay cozy ☕</p>
+  <a href="index.html">Back to Home</a>
 </body>
 </html>
