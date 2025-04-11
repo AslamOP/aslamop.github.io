@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MochaMorn Feedback</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5efe6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #6b4f3b;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff8f0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .feedback-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .feedback-card {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+    .feedback-card img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .feedback-card h3 {
+      margin: 10px 0;
+      color: #5b3a29;
+    }
+    .experience {
+      margin-top: 30px;
+      text-align: center;
+    }
+    textarea {
+      width: 90%;
+      height: 100px;
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #6b4f3b;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #8c6550;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>My MochaMorn Transformation</h1>
+
+    <div class="feedback-section">
+      <div class="feedback-card">
+        <h3>Before the Product</h3>
+        <img src="before.jpeg" alt="Before MochaMorn">
+      </div>
+      <div class="feedback-card">
+        <h3>After the Product</h3>
+        <img src="after.jpeg" alt="After MochaMorn">
+      </div>
+    </div>
+
+    <div class="experience">
+      <h2>Share Your Experience</h2>
+      <textarea placeholder="Tell us how MochaMorn changed your mornings..."></textarea>
+      <br>
+      <button>Submit Feedback</button>
+    </div>
+  </div>
+
+</body>
+</html>
