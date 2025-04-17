@@ -1,374 +1,177 @@
-/* === FONTS === */
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* === GLOBAL STYLES === */
 body {
-    margin: 0;
-    background: #121212;
-    font-family: "Host Grotesk", serif;
-    font-weight: 300;
-    font-style: italic;
-    color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease;
 }
 
-button {
-    font-family: "Host Grotesk", serif !important;
-    transition: all 0.3s ease-in-out;
-    background-color: #333;
-    color: #e0e0e0;
-    border: 1px solid #c0c0c0;
+/* Header with Pulsing Animation */
+header {
+  background: linear-gradient(45deg, #007BFF, #00C4B4);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  animation: pulseBackground 5s infinite alternate;
 }
 
-button:hover {
-    background-color: #c0c0c0;
-    color: #121212;
+@keyframes pulseBackground {
+  0% { background: linear-gradient(45deg, #007BFF, #00C4B4); }
+  100% { background: linear-gradient(45deg, #00C4B4, #007BFF); }
 }
 
-/* === HEADER === */
-.header1 {
-    padding: 20px;
-    background-color: #1f1f1f;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Poppins", sans-serif;
-    color: #e0e0e0;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
 }
 
-.header1 img {
-    width: 200px;
-    filter: drop-shadow(2px 2px 10px #555);
+header h1:hover {
+  transform: scale(1.05);
 }
 
-.header1 h1 {
-    margin-left: 20px;
-    color: #e0e0e0;
+/* Navigation Links with Hover Animation */
+nav ul {
+  list-style: none;
+  padding: 1rem 0;
 }
 
-.header1 svg {
-    margin-right: 15px;
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
 }
 
-/* === NAVIGATION === */
-.nav {
-    display: flex;
-    gap: 50px;
-    margin-right: 20px;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.nav a,
-#mnav a {
-    text-decoration: none;
-    padding: 10px 30px;
-    font-weight: 900;
-    border-radius: 20px;
-    border: 1px solid #c0c0c0;
-    transition: 0.3s;
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
 }
 
-.nav a {
-    background-color: #333;
-    color: #e0e0e0;
-    filter: drop-shadow(2px 2px 10px #0073e6);
+nav ul li a:hover {
+  color: #f4f4f4;
 }
 
-.nav a:hover {
-    background-color: #c0c0c0;
-    color: #121212;
-    filter: drop-shadow(2px 2px 15px #005bb5);
+nav ul li a:hover::after {
+  width: 100%;
 }
 
-#mnav {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    background-color: #1a202c;
-    padding: 30px;
+/* Button Styles with Scale and Shadow Animation */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#mnav a {
-    background-color: #0073e6;
-    color: white;
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  animation: bounce 0.3s ease;
 }
 
-#mnav a:hover {
-    filter: drop-shadow(2px 2px 15px #005bb5);
+@keyframes bounce {
+  0%, 100% { transform: scale(1.1); }
+  50% { transform: scale(1.15); }
 }
 
-#active {
-    background-color: #5a00ff !important;
-    color: whitesmoke !important;
+/* Section Styles with Fade-In Animation */
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in;
 }
 
-/* === CONTAINERS === */
-.container {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
-.container-row {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 0;
-    justify-content: center;
-    align-items: flex-start;
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #007BFF;
+  transition: color 0.3s ease;
 }
 
-/* === CARDS === */
-.card1, .card2, .card3 {
-    width: 90%;
-    margin: 15px auto;
-    background-color: #1f1f1f;
-    padding: 10px;
-    text-align: center;
-    border-radius: 20px;
-    color: #e0e0e0;
-    border: 1px solid #333;
-    filter: drop-shadow(2px 2px 10px #ddd);
+section h2:hover {
+  color: #00C4B4;
 }
 
-.card1:hover, .card2:hover, .card3:hover {
-    filter: drop-shadow(2px 2px 15px #555);
+/* Paragraph and Link Styles */
+p {
+  margin-bottom: 1rem;
 }
 
-.card1 img, .card2 img, .card3 img {
-    width: 90%;
-    height: auto;
-    border-radius: 8px;
+a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-/* === COURSE CARD === */
-.coursecard {
-    background-color: #E0B2FF;
-    padding: 10px;
-    border-radius: 20px;
-    margin: 0 auto;
-    max-width: 400px;
-    text-align: center;
-    margin-right: 25px !important;
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
 
-.coursecard img {
-    width: 50%;
-    height: auto;
-    border-radius: 20px;
-    aspect-ratio: 1/1;
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  position: relative;
+  animation: slideUp 0.5s ease;
 }
 
-/* === BUTTONS === */
-.btn-sec, .btn-prm, .btn-ngrn, .btn-nred, .btn-insta {
-    font-size: 20px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
+@keyframes slideUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
-.btn-sec {
-    background-color: #0073e6;
-    color: white;
-    filter: drop-shadow(2px 2px 10px #0073e6);
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
 
-.btn-sec:hover {
-    filter: drop-shadow(3px 3px 15px #005bb5);
-}
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
 
-.btn-prm {
-    background-color: #28a745;
-    color: white;
-    margin: 20px;
-    filter: drop-shadow(2px 2px 10px #28a745);
-}
+  .btn {
+    padding: 0.6rem 1rem;
+  }
 
-.btn-prm:hover {
-    filter: drop-shadow(3px 3px 15px #1e7e34);
-}
-
-.btn-ngrn {
-    background-color: #99FF99;
-    color: #004d00;
-    margin: 20px;
-    filter: drop-shadow(2px 2px 10px #99FF99);
-}
-
-.btn-ngrn:hover {
-    filter: drop-shadow(3px 3px 15px #99FF99);
-}
-
-.btn-nred {
-    background-color: #FFB2B2;
-    color: #800000;
-    margin: 10px;
-    filter: drop-shadow(2px 2px 10px #FFB2B2);
-}
-
-.btn-nred:hover {
-    filter: drop-shadow(3px 3px 15px #FFB2B2);
-}
-
-.btn-insta {
-    background: linear-gradient(45deg, #FF6EC7, #FF4500, #FFB52E);
-    color: white;
-    margin: 10px;
-    filter: drop-shadow(2px 2px 10px #FFB2B2);
-}
-
-.btn-insta:hover {
-    filter: drop-shadow(3px 3px 15px #FFB2B2);
-}
-
-/* === FOOTER === */
-.footr {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
-    padding: 10px;
-    text-align: center;
-    margin-top: 50px;
-    border-top: 1px solid #333;
-    filter: drop-shadow(5px 5px 20px #555);
-}
-
-.footr a {
-    color: #e0e0e0;
-    text-decoration: none;
-}
-
-.footr a:hover {
-    color: #c0c0c0;
-}
-
-.footr h1 {
-    margin: 5px;
-    font-family: "Jamil Grotesk", serif;
-}
-
-/* === LOGIN PAGE === */
-.login input {
-    background-color: white;
-    color: blueviolet;
-    height: 40px;
-    font-size: 30px;
-    width: 90%;
-    text-align: center;
-    margin: 5px;
-    max-width: 600px;
-}
-
-.cardlogin {
-    width: 300px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 15px;
-    text-align: center;
-    background-color: blueviolet;
-    border-radius: 30px;
-    color: white;
-}
-
-.cardlogin input {
-    border-radius: 20px;
-    margin: 10px;
-}
-
-input::placeholder {
-    color: blueviolet;
-    font-size: 30px;
-}
-
-/* === CERTIFICATE FORM === */
-#crf input {
-    height: 40px;
-    width: 100%;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 30px;
-}
-
-#crf input[type="submit"] {
-    background-color: white;
-    color: blueviolet;
-    font-weight: bolder;
-}
-
-#crf input[type="submit"]:hover {
-    background-color: navy;
-    color: white;
-    border: 1px solid white;
-}
-
-/* === YOUTUBE VIDEO RESPONSIVE === */
-.ytv {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-}
-
-.ytv iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-/* === MEDIA QUERIES === */
-@media (max-width: 600px) {
-    .nav {
-        display: none;
-    }
-}
-
-@media (min-width: 600px) {
-    .cardlogin {
-        width: 500px;
-    }
-}
-
-@media (min-width: 768px) {
-    .cardlogin {
-        width: 600px;
-    }
-}
-
-@media (min-width: 992px) {
-    .cardlogin {
-        width: 800px;
-    }
-}
-
-@media (max-width: 850px) {
-    [class^="nav"] {
-        display: none;
-    }
-    .menu-icon {
-        order: 3;
-    }
-}
-
-@media (min-width: 850px) {
-    .menu-icon {
-        display: none;
-    }
-}
-
-@media (max-width: 930px) {
-    .coursecard {
-        margin: 0 auto !important;
-    }
+  section {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
 }
