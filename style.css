@@ -1,85 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* === FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* === GLOBAL STYLES === */
 body {
     margin: 0;
-    background: #121212; /* Dark background */
+    background: #121212;
     font-family: "Host Grotesk", serif;
     font-weight: 300;
     font-style: italic;
-    color: #e0e0e0; /* Light text for readability */
+    color: #e0e0e0;
 }
 
 button {
     font-family: "Host Grotesk", serif !important;
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-    background-color: #333333; /* Dark button */
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
     color: #e0e0e0;
-    border: 1px solid #c0c0c0; /* Silver border */
+    border: 1px solid #c0c0c0;
 }
 
 button:hover {
-    background-color: #c0c0c0; /* Silver hover */
-    color: #121212; /* Dark text on hover */
+    background-color: #c0c0c0;
+    color: #121212;
 }
 
-/*Header*/
-
-.header1 img{
-    width: 200px;
-    filter: drop-shadow(2px 2px 10px #555); /* Subtle shadow */
-}
-
-.header1{
-    padding: 20px; /* Increased padding for better spacing */
-    background-color: #1f1f1f; /* Slightly lighter dark for header */
+/* === HEADER === */
+.header1 {
+    padding: 20px;
+    background-color: #1f1f1f;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: "Poppins", sans-serif;
-    color: #e0e0e0; /* Light text */
+    color: #e0e0e0;
 }
 
-.header1 h1{
-    color: #e0e0e0; /* Light text */
+.header1 img {
+    width: 200px;
+    filter: drop-shadow(2px 2px 10px #555);
+}
+
+.header1 h1 {
     margin-left: 20px;
+    color: #e0e0e0;
 }
 
-.header1 svg{
+.header1 svg {
     margin-right: 15px;
-    /*use height and width to change size*/
 }
-/*nav*/
 
-.nav{
+/* === NAVIGATION === */
+.nav {
     display: flex;
     gap: 50px;
     margin-right: 20px;
 }
 
-.nav a{
-
+.nav a,
+#mnav a {
     text-decoration: none;
-    background-color: #333333; /* Dark button */
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    filter: drop-shadow(2px 2px 10px #0073e6);
-    color: #e0e0e0; /* Light text */
+    padding: 10px 30px;
     font-weight: 900;
     border-radius: 20px;
-    border: 1px solid #c0c0c0; /* Silver border */
+    border: 1px solid #c0c0c0;
+    transition: 0.3s;
 }
 
-.nav a:hover{
-    background-color: #c0c0c0; /* Silver hover */
-    color: #121212; /* Dark text on hover */
-    filter: drop-shadow(2px 2px 15px #005bb5); /* Darker blue on hover */
+.nav a {
+    background-color: #333;
+    color: #e0e0e0;
+    filter: drop-shadow(2px 2px 10px #0073e6);
 }
 
+.nav a:hover {
+    background-color: #c0c0c0;
+    color: #121212;
+    filter: drop-shadow(2px 2px 15px #005bb5);
+}
 
-#mnav{
+#mnav {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -88,29 +87,23 @@ button:hover {
     background-color: #1a202c;
     padding: 30px;
 }
-#mnav a{
-    text-decoration: none;
+
+#mnav a {
     background-color: #0073e6;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    filter: drop-shadow(2px 2px 10px #0073e6);
     color: white;
-    font-weight: 900;
-    border-radius: 20px;
 }
-#mnav a:hover{
+
+#mnav a:hover {
     filter: drop-shadow(2px 2px 15px #005bb5);
 }
 
-#active{
+#active {
     background-color: #5a00ff !important;
     color: whitesmoke !important;
-
 }
 
-.container{
+/* === CONTAINERS === */
+.container {
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -118,67 +111,58 @@ button:hover {
     align-items: center;
 }
 
-.container-row{
+.container-row {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 0;
+    gap: 20px 0;
     justify-content: center;
     align-items: flex-start;
 }
 
-/*Cards*/
-
-.card1,.card2,.card3{
-    width:90%;
+/* === CARDS === */
+.card1, .card2, .card3 {
+    width: 90%;
     margin: 15px auto;
-    background-color: #1f1f1f; /* Card background */
+    background-color: #1f1f1f;
     padding: 10px;
     text-align: center;
     border-radius: 20px;
-    color: #e0e0e0; /* Light text */
-    border: 1px solid #333333; /* Subtle border */
-    filter: drop-shadow(2px 2px 10px #ddd); /* Light shadow */
+    color: #e0e0e0;
+    border: 1px solid #333;
+    filter: drop-shadow(2px 2px 10px #ddd);
 }
 
-.card1:hover,.card2:hover,.card3:hover{
-    filter: drop-shadow(2px 2px 15px #555); /* Slightly darker shadow on hover */
+.card1:hover, .card2:hover, .card3:hover {
+    filter: drop-shadow(2px 2px 15px #555);
 }
 
-.card1 img, .card2 img, .card3 img{
-    height: auto;
+.card1 img, .card2 img, .card3 img {
     width: 90%;
+    height: auto;
     border-radius: 8px;
 }
 
-/*Course Cards*/
-
+/* === COURSE CARD === */
 .coursecard {
     background-color: #E0B2FF;
-    padding: 10px; /* or try reducing it to something like padding: 5px; */
+    padding: 10px;
     border-radius: 20px;
     margin: 0 auto;
     max-width: 400px;
-    margin-left: 0 !important;
-    margin-right: 25px !important;
     text-align: center;
+    margin-right: 25px !important;
 }
-
 
 .coursecard img {
     width: 50%;
     height: auto;
     border-radius: 20px;
     aspect-ratio: 1/1;
-    margin: 0;
 }
 
-/*Neon buttons*/
-
-.btn-sec{
-    background-color: #0073e6; /* Professional blue */
-    color: #ffffff; /* White text */
+/* === BUTTONS === */
+.btn-sec, .btn-prm, .btn-ngrn, .btn-nred, .btn-insta {
     font-size: 20px;
     font-family: "Merriweather", serif;
     font-weight: 900;
@@ -186,124 +170,90 @@ button:hover {
     padding: 10px;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
+}
+
+.btn-sec {
+    background-color: #0073e6;
+    color: white;
     filter: drop-shadow(2px 2px 10px #0073e6);
 }
 
-.btn-sec:hover{
-    cursor: pointer;
+.btn-sec:hover {
     filter: drop-shadow(3px 3px 15px #005bb5);
 }
 
-.btn-prm{
-    background-color: #28a745; /* Green for primary actions */
-    color: #ffffff;
-    font-size: 20px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
+.btn-prm {
+    background-color: #28a745;
+    color: white;
     margin: 20px;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
     filter: drop-shadow(2px 2px 10px #28a745);
 }
 
-.btn-prm:hover{
-    cursor: pointer;
+.btn-prm:hover {
     filter: drop-shadow(3px 3px 15px #1e7e34);
 }
 
-.btn-ngrn{
+.btn-ngrn {
+    background-color: #99FF99;
+    color: #004d00;
+    margin: 20px;
+    filter: drop-shadow(2px 2px 10px #99FF99);
+}
 
-        background-color: #99FF99;
-        color: #004d00;
-        font-size: 20px;
-        font-family: "Merriweather", serif;
-        font-weight: 900;
-        font-style: italic;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 20px;
-        border: none;
-        filter: drop-shadow(2px 2px 10px #99FF99);
-    }
+.btn-ngrn:hover {
+    filter: drop-shadow(3px 3px 15px #99FF99);
+}
 
-.btn-ngrn:hover{
-        cursor: pointer;
-        filter: drop-shadow(3px 3px 15px #99FF99);
-    }
-
-.btn-nred{
-
+.btn-nred {
     background-color: #FFB2B2;
     color: #800000;
-    font-size: 20px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
     margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
     filter: drop-shadow(2px 2px 10px #FFB2B2);
 }
 
-.btn-nred:hover{
-    cursor: pointer;
+.btn-nred:hover {
     filter: drop-shadow(3px 3px 15px #FFB2B2);
 }
 
-.btn-insta{
-
-    background: linear-gradient(45deg,
-    #FF6EC7, /* Neon Pink */
-    #FF4500, /* Neon Red-Orange */
-    #FFB52E  /* Neon Yellow-Orange */);
-    color: #ffffff;
-    font-size: 20px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
+.btn-insta {
+    background: linear-gradient(45deg, #FF6EC7, #FF4500, #FFB52E);
+    color: white;
     margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
     filter: drop-shadow(2px 2px 10px #FFB2B2);
 }
 
-.btn-insta:hover{
-    cursor: pointer;
+.btn-insta:hover {
     filter: drop-shadow(3px 3px 15px #FFB2B2);
 }
 
-
-/*footer*/
-.footr{
-    background-color: #1f1f1f; /* Slightly lighter dark for footer */
-    height:auto;
-    color: #e0e0e0; /* Light text */
+/* === FOOTER === */
+.footr {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
     padding: 10px;
-    width: auto;
     text-align: center;
     margin-top: 50px;
-    border-top: 1px solid #333333; /* Subtle border */
+    border-top: 1px solid #333;
     filter: drop-shadow(5px 5px 20px #555);
 }
-.footr a{
+
+.footr a {
+    color: #e0e0e0;
     text-decoration: none;
-    color: #e0e0e0; /* Light text */
-    margin: 0;
-}
-.footr a:hover{
-    color: #c0c0c0; /* Silver hover */
-}
-.footr h1{
-    margin: 5px;
-    font-family: "Jamil Grotesk", serif; /* Updated font-family reference */
 }
 
-/*LOGIN*/
-.login input{
+.footr a:hover {
+    color: #c0c0c0;
+}
+
+.footr h1 {
+    margin: 5px;
+    font-family: "Jamil Grotesk", serif;
+}
+
+/* === LOGIN PAGE === */
+.login input {
     background-color: white;
     color: blueviolet;
     height: 40px;
@@ -312,12 +262,9 @@ button:hover {
     text-align: center;
     margin: 5px;
     max-width: 600px;
-
 }
 
-
-
-.cardlogin{
+.cardlogin {
     width: 300px;
     position: absolute;
     top: 40%;
@@ -330,20 +277,18 @@ button:hover {
     color: white;
 }
 
-.cardlogin input{
+.cardlogin input {
     border-radius: 20px;
     margin: 10px;
 }
 
-input::placeholder{
+input::placeholder {
     color: blueviolet;
     font-size: 30px;
 }
 
-/*CERTIFICATE REQUEST SENDER FORM*/
-
-#crf input{
-
+/* === CERTIFICATE FORM === */
+#crf input {
     height: 40px;
     width: 100%;
     text-align: center;
@@ -351,30 +296,22 @@ input::placeholder{
     font-size: 30px;
 }
 
-#crf input[type="submit"]{
+#crf input[type="submit"] {
     background-color: white;
     color: blueviolet;
     font-weight: bolder;
 }
 
-#crf input[type="submit"]:hover{
+#crf input[type="submit"]:hover {
     background-color: navy;
     color: white;
     border: 1px solid white;
 }
 
-
-::selection{
-   /* background-color: black;
-    color : #99FF99 ;
-    filter: drop-shadow(2px 2px 15px #800000); */
-}
-
-/*Responsiveness*/
-/*Youtube video mobile responsive*/
+/* === YOUTUBE VIDEO RESPONSIVE === */
 .ytv {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -390,77 +327,48 @@ input::placeholder{
     border: 0;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 350px) and (max-width:600px) {
-    .nav{
+/* === MEDIA QUERIES === */
+@media (max-width: 600px) {
+    .nav {
         display: none;
     }
-
 }
 
-@media only screen and (max-width: 600px) {
-    .nav{
-        display: none;
-    }
-
-}
-
-@media only screen and (min-width: 400px) and (max-width:600px) {
-    .nav{
-        display: none;
-    }
-
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-    .cardlogin{
+@media (min-width: 600px) {
+    .cardlogin {
         width: 500px;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-    .cardlogin{
+@media (min-width: 768px) {
+    .cardlogin {
         width: 600px;
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-    .cardlogin{
+@media (min-width: 992px) {
+    .cardlogin {
         width: 800px;
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
-
-
-
-@media(max-width:850px){
-    [class^="nav"]{
+@media (max-width: 850px) {
+    [class^="nav"] {
         display: none;
     }
-    .menu-icon{
+    .menu-icon {
         order: 3;
     }
 }
 
-@media(min-width:850px){
-    .menu-icon{
+@media (min-width: 850px) {
+    .menu-icon {
         display: none;
     }
 }
 
 @media (max-width: 930px) {
-    .coursecard{
+    .coursecard {
         margin: 0 auto !important;
     }
 }
