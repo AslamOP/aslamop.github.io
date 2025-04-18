@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleeping Mask - Features and Design</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4CAF50, #81C784);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+        .tab {
+            padding: 0.7rem 1.5rem;
+            cursor: pointer;
+            background: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px 5px 0 0;
+            margin-right: 0.5rem;
+            transition: background 0.3s, color 0.3s;
+        }
+        .tab:hover {
+            background: #81C784;
+            color: white;
+        }
+        .tab.active {
+            background: #4CAF50;
+            color: white;
+            border-bottom: none;
+        }
+        .tab-content {
+            display: none;
+            padding: 3rem;
+            margin: 0 auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        h1, h2 {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        footer {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+    <script>
+        function openTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const tabButtons = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tabButtons.forEach(button => button.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Sleeping Mask</h1>
+        <p>Designed for Comfort, Safety, and Restful Sleep</p>
+        <img src="image.png" alt="Sleeping Mask">
+        <img src="https://via.placeholder.com/800x400?text=AI+Generated+Image+1" alt="AI Generated Image 1">
+        <img src="https://via.placeholder.com/800x400?text=AI+Generated+Image+2" alt="AI Generated Image 2">
+    </header>
+    <div class="tabs">
+        <div class="tab active" data-tab="problem" onclick="openTab('problem')">Problem Statement</div>
+        <div class="tab" data-tab="objectives" onclick="openTab('objectives')">Objectives</div>
+        <div class="tab" data-tab="constraints" onclick="openTab('constraints')">Constraints</div>
+        <div class="tab" data-tab="kano" onclick="openTab('kano')">Kano Model</div>
+    </div>
+    <div id="problem" class="tab-content active">
+        <h2>Problem Statement</h2>
+        <p>Existing sleep masks and noise-canceling earbuds are often bulky, rigid, or ill-fitting, causing discomfort, especially for side sleepers. Traditional earbuds can put pressure on the ears, while standard sleep masks may not stay in place throughout the night. There is a need for a lightweight, flexible sleep mask with integrated noise-canceling Bluetooth earbuds and a heart rate monitor that detects sleep onset and gradually lowers music volume, ensuring a comfortable and uninterrupted sleep experience.</p>
+    </div>
+    <div id="objectives" class="tab-content">
+        <h2>Objectives</h2>
+        <ul>
+            <li>Promote deep & restful sleep with high-quality active noise cancellation and soothing sounds.</li>
+            <li>Ensure user safety with integrated sound recognition to alert users in emergencies.</li>
+            <li>Provide maximum comfort using ultra-soft foam fabric, cooling gel for eyes, and a lightweight design suitable for all sleeping positions.</li>
+            <li>Track sleep patterns and monitor motion sensors to fade music gradually.</li>
+            <li>Offer a feasible, low-cost solution with Bluetooth connectivity, button controls, long-lasting battery life, and fast charging.</li>
+        </ul>
+    </div>
+    <div id="constraints" class="tab-content">
+        <h2>Constraints</h2>
+        <ul>
+            <li>The mask must be lightweight and flexible for comfort in all sleeping positions.</li>
+            <li>Integrated earbuds should be noise-canceling and not exert pressure on the ears.</li>
+            <li>The Bluetooth system should allow seamless connectivity with minimal latency.</li>
+            <li>The music volume must gradually reduce as the user falls asleep.</li>
+            <li>The battery should last through a full night’s sleep.</li>
+            <li>Materials used must be breathable and skin-friendly.</li>
+            <li>The design should ensure a secure yet non-restrictive fit.</li>
+            <li>All components must be compact and unobtrusive.</li>
+            <li>The device should be easy to clean and maintain.</li>
+        </ul>
+    </div>
+    <div id="kano" class="tab-content">
+        <h2>Kano Model</h2>
+        <p>The Kano Model is an advanced version of the sleeping mask, designed with cutting-edge technology to enhance user comfort and functionality. It incorporates the following features:</p>
+        <ul>
+            <li>Adaptive noise cancellation that adjusts to ambient sound levels in real-time.</li>
+            <li>Integrated temperature regulation to keep the mask cool and comfortable throughout the night.</li>
+            <li>Customizable fit with adjustable straps and memory foam padding.</li>
+            <li>Enhanced battery life, providing up to 12 hours of continuous use on a single charge.</li>
+            <li>Smart assistant compatibility for hands-free control of music, alarms, and more.</li>
+            <li>Compact and foldable design for easy portability and storage.</li>
+        </ul>
+        <h3>Kano Model Performance Graph</h3>
+        <p>The Kano Model helps visualize the relationship between product features and user satisfaction, highlighting areas for improvement and innovation.</p>
+        <img src="kano.png" alt="Kano Model Graph">
+    </div>
+    <footer>
+        &copy; 2023 Sleeping Mask. All rights reserved.
+    </footer>
+</body>
+</html>

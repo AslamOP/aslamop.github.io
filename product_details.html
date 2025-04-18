@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details & Instruction Manual</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4CAF50, #81C784);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        h1, h2 {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        .manual-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .manual-link:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>Sleeping Mask</div>
+        <div>
+            <a href="product_details.html">Product Details</a>
+            <a href="instruction_manual.html">Instruction Manual</a>
+            <a href="sleeping_mask.html">Features</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Product Details & Instruction Manual</h1>
+    </header>
+    <div class="content">
+        <h2>Product Details</h2>
+        <ul>
+            <li>Lightweight and flexible design for all sleeping positions.</li>
+            <li>Integrated noise-canceling Bluetooth earbuds.</li>
+            <li>Heart rate monitor to detect sleep onset.</li>
+            <li>Gradual music volume reduction for uninterrupted sleep.</li>
+            <li>Ultra-soft foam fabric with cooling gel for maximum comfort.</li>
+            <li>Long-lasting battery life with fast charging.</li>
+        </ul>
+        <h2>Instruction Manual</h2>
+        <p>For detailed instructions on how to use the sleeping mask, click the link below:</p>
+        <a href="instruction_manual.html" class="manual-link">View Instruction Manual</a>
+        <h2>Additional Features</h2>
+        <ul>
+            <li>Smart alarm system to wake you up at the optimal sleep cycle.</li>
+            <li>Customizable soundscapes for relaxation and meditation.</li>
+            <li>Compact travel case for portability.</li>
+        </ul>
+    </div>
+    <footer>
+        &copy; 2023 Sleeping Mask. All rights reserved.
+    </footer>
+</body>
+</html>
