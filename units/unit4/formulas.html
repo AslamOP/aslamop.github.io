@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 4 Formulas - Semiconductor Physics</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: #f7f9fa; }
+        .container { max-width: 700px; margin: 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 32px 24px 24px 24px; }
+        .formula-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+        .formula-header i { font-size: 2.2rem; color: #3a7bd5; }
+        .formula-intro { color: #444; font-size: 1.08rem; margin-bottom: 24px; }
+        .formula-section { margin-bottom: 32px; }
+        .formula-section h2 { color: #3a7bd5; font-size: 1.2rem; margin-bottom: 12px; border-left: 4px solid #3a7bd5; padding-left: 10px; }
+        .formula-card { background: #f0f4fa; border-left: 5px solid #3a7bd5; border-radius: 8px; margin-bottom: 16px; padding: 16px 18px; font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace; font-size: 1.08rem; color: #222; box-shadow: 0 2px 8px rgba(58,123,213,0.06); }
+        .formula-card strong { font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace; font-size: 1.13rem; color: #1a237e; }
+        .back-link { display: inline-block; margin-top: 24px; color: #3a7bd5; text-decoration: none; font-weight: 500; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="formula-header">
+            <i class="fas fa-microchip"></i>
+            <h1>Unit 4: Semiconductor Physics - Formula Sheet</h1>
+        </div>
+        <div class="formula-intro">
+            <p>Essential formulas for Semiconductor Physics, including carrier concentration, Hall effect, mobility, and conductivity. Use this as a quick reference for your studies and exams.</p>
+        </div>
+        <section class="formula-section">
+            <h2>Carrier Concentration</h2>
+            <div class="formula-card">
+                <strong>n<sub>i</sub> = sqrt(N<sub>c</sub>N<sub>v</sub>) exp(-E<sub>g</sub>/2kT)</strong><br>
+                <span style="font-size:0.98em; color:#444;">N<sub>c</sub>, N<sub>v</sub>: effective density of states, E<sub>g</sub>: band gap, k: Boltzmann constant, T: temperature</span>
+            </div>
+            <div class="formula-card">
+                <strong>n &asymp; N<sub>D</sub></strong> (n-type, fully ionized)
+            </div>
+            <div class="formula-card">
+                <strong>p &asymp; N<sub>A</sub></strong> (p-type, fully ionized)
+            </div>
+        </section>
+        <section class="formula-section">
+            <h2>Hall Effect</h2>
+            <div class="formula-card">
+                <strong>R<sub>H</sub> = E<sub>y</sub> / (J<sub>x</sub>B<sub>z</sub>) = 1/(nq)</strong><br>
+                <span style="font-size:0.98em; color:#444;">E<sub>y</sub>: Hall field, J<sub>x</sub>: current density, B<sub>z</sub>: magnetic field, n: carrier concentration, q: charge</span>
+            </div>
+        </section>
+        <section class="formula-section">
+            <h2>Mobility & Conductivity</h2>
+            <div class="formula-card">
+                <strong>&mu; = v<sub>d</sub> / E</strong><br>
+                <span style="font-size:0.98em; color:#444;">v<sub>d</sub>: drift velocity, E: electric field</span>
+            </div>
+            <div class="formula-card">
+                <strong>&sigma; = nq&mu;</strong>
+            </div>
+        </section>
+        <a href="../../index.html" class="back-link">&larr; Back to Home</a>
+    </div>
+</body>
+</html> 

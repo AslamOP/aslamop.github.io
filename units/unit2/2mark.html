@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2: Lasers & Fiber Optics - 2 Mark Questions | Engineering Physics</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../question-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .sidebar-nav {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 220px;
+            background: #f4f8fb;
+            border-right: 1px solid #e0e0e0;
+            height: 100vh;
+            padding-top: 2rem;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .sidebar-nav a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.7rem 1.2rem;
+            border-radius: 5px;
+            transition: background 0.2s, color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        .sidebar-nav a.active, .sidebar-nav a:hover {
+            background: #3498db;
+            color: #fff;
+        }
+        .main-content {
+            margin-left: 240px;
+            padding: 2rem 2rem 2rem 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 2000;
+        }
+        @media (max-width: 900px) {
+            .sidebar-nav {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Engineering Physics</div>
+        <div class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#units">Units</a>
+            <a href="../../index.html#formulas">Formulas</a>
+            <a href="../../index.html#pyq">Previous Year Questions</a>
+            <a href="../../index.html#resources">Resources</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="sidebar-nav">
+        <a href="2mark.html" class="active"><i class="fas fa-star"></i>2 Mark</a>
+        <a href="10mark.html"><i class="fas fa-certificate"></i>10 Mark</a>
+        <a href="15mark.html"><i class="fas fa-award"></i>15 Mark</a>
+        <a href="20mark.html"><i class="fas fa-trophy"></i>20 Mark</a>
+        <a href="topicwise.html"><i class="fas fa-list"></i>Topic-wise</a>
+    </div>
+
+    <div class="main-content">
+        <div class="unit-header">
+            <h1>Unit 2: Lasers & Fiber Optics</h1>
+            <h2 id="2mark">2 Mark Questions</h2>
+        </div>
+        <div class="question-list">
+            <div class="question-card">
+                <div class="question">
+                    <h3>1. What is population inversion in a laser?</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong> Population inversion is the condition in which the number of atoms in a higher energy state exceeds those in a lower energy state, which is essential for laser action.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h3>2. Differentiate between spontaneous and stimulated emission.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong> Spontaneous emission occurs naturally without external influence, while stimulated emission occurs when an incoming photon causes an excited atom to emit a photon of the same energy, phase, and direction.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h3>3. What is the significance of V-number in optical fibers?</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong> The V-number determines the number of modes that can propagate in an optical fiber. For single-mode operation, V &lt; 2.405; for multimode, V &gt; 2.405.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h3>4. Draw the refractive index profile of step index and graded index fibers.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong> <em>Step index:</em> The refractive index changes abruptly at the core-cladding boundary. <em>Graded index:</em> The refractive index decreases gradually from the center of the core to the cladding.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h3>5. What is numerical aperture (NA) in optical fibers?</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong> Numerical aperture is a measure of the light-gathering ability of an optical fiber, defined as NA = sqrt(n<sub>core</sub><sup>2</sup> - n<sub>cladding</sub><sup>2</sup>).</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h3>6. Why are Nd<sup>3+</sup> ions doped into YAG crystal in Nd-YAG lasers?</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong> Nd<sup>3+</sup> ions provide the necessary energy levels for lasing action in the YAG crystal, enabling efficient laser operation.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h3>7. What is the basic principle of laser action?</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong> Laser action is based on the principle of stimulated emission, where an incoming photon induces the emission of another photon with identical properties.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h3>8. What is the acceptance angle in an optical fiber?</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong> The acceptance angle is the maximum angle at which light can enter the fiber and still be guided through total internal reflection.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'});" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Engineering Physics</h4>
+                <p>Your complete study companion</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="../../index.html#units">Units</a>
+                <a href="../../index.html#formulas">Formulas</a>
+                <a href="../../index.html#pyq">Previous Year Questions</a>
+                <a href="../../index.html#resources">Resources</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Engineering Physics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script>
+        // Highlight active sidebar link
+        const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 

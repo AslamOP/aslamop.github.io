@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1: Quantum Mechanics</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        .unit-hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .unit-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .section-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .section-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-links {
+            margin-top: 1rem;
+        }
+
+        .section-links a {
+            display: block;
+            padding: 0.5rem;
+            color: #1e3c72;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .section-links a:hover {
+            color: #2a5298;
+        }
+
+        .progress-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .progress-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .progress-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .progress-number {
+            font-size: 2rem;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+
+        .quick-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .quick-link {
+            background: #1e3c72;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .quick-link:hover {
+            background: #2a5298;
+        }
+
+        @media (max-width: 768px) {
+            .unit-hero {
+                padding: 3rem 1rem;
+            }
+
+            .section-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .progress-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Engineering Physics</div>
+        <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </nav>
+
+    <div class="unit-hero">
+        <div class="physics-animation" aria-hidden="true">
+            <div class="atom">
+                <div class="nucleus"></div>
+                <div class="orbital orbital-1">
+                    <div class="electron"></div>
+                </div>
+                <div class="orbital orbital-2">
+                    <div class="electron"></div>
+                </div>
+                <div class="orbital orbital-3">
+                    <div class="electron"></div>
+                </div>
+            </div>
+            <div class="quantum-waves">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+            </div>
+        </div>
+        <h1>Unit 1: Quantum Mechanics</h1>
+        <p>Explore the fundamental principles of quantum physics</p>
+    </div>
+
+    <div class="unit-content">
+        <div class="quick-links">
+            <a href="topicwise.html" class="quick-link"><i class="fas fa-book"></i> Topics</a>
+            <a href="formulas.html" class="quick-link"><i class="fas fa-square-root-alt"></i> Formulas</a>
+            <a href="2mark.html" class="quick-link"><i class="fas fa-question-circle"></i> 2 Marks</a>
+            <a href="10mark.html" class="quick-link"><i class="fas fa-pen"></i> 10 Marks</a>
+        </div>
+
+        <div class="progress-section">
+            <h2>Your Progress</h2>
+            <div class="progress-grid">
+                <div class="progress-card" data-aos="fade-up">
+                    <div class="progress-number">0%</div>
+                    <p>Topics Completed</p>
+                </div>
+                <div class="progress-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="progress-number">0</div>
+                    <p>Questions Solved</p>
+                </div>
+                <div class="progress-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="progress-number">0h</div>
+                    <p>Time Spent</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-grid">
+            <div class="section-card" data-aos="fade-up">
+                <h3><i class="fas fa-book"></i> Topic-wise Content</h3>
+                <p>Comprehensive study materials organized by topics</p>
+                <div class="section-links">
+                    <a href="topicwise.html">View Topics</a>
+                </div>
+            </div>
+
+            <div class="section-card" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-square-root-alt"></i> Important Formulas</h3>
+                <p>Quick reference guide to essential formulas</p>
+                <div class="section-links">
+                    <a href="formulas.html">View Formulas</a>
+                </div>
+            </div>
+
+            <div class="section-card" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-question-circle"></i> Practice Questions</h3>
+                <p>Practice questions with detailed solutions</p>
+                <div class="section-links">
+                    <a href="2mark.html">2 Mark Questions</a>
+                    <a href="10mark.html">10 Mark Questions</a>
+                    <a href="15mark.html">15 Mark Questions</a>
+                    <a href="20mark.html">20 Mark Questions</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-resources" data-aos="fade-up">
+            <h2>Key Resources</h2>
+            <div class="section-grid">
+                <div class="section-card">
+                    <h3><i class="fas fa-file-pdf"></i> Reference Materials</h3>
+                    <div class="section-links">
+                        <a href="../../refrence all unit/UNIT 1/e.physics unit 1.pdf">Unit Notes</a>
+                        <a href="../../refrence all unit/UNIT 1/Unit - I problems.pdf">Practice Problems</a>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <h3><i class="fas fa-desktop"></i> Interactive Learning</h3>
+                    <div class="section-links">
+                        <a href="topicwise.html#simulations">Physics Simulations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Engineering Physics. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Progress tracking
+        const progressTracking = {
+            topics: {
+                total: 5,
+                completed: 0
+            },
+            questions: 0,
+            timeSpent: 0,
+
+            loadProgress() {
+                const saved = localStorage.getItem('unit1Progress');
+                if (saved) {
+                    const data = JSON.parse(saved);
+                    this.topics = data.topics;
+                    this.questions = data.questions;
+                    this.timeSpent = data.timeSpent;
+                    this.updateDisplay();
+                }
+            },
+
+            updateProgress(type, value) {
+                switch(type) {
+                    case 'topic':
+                        this.topics.completed = value;
+                        break;
+                    case 'question':
+                        this.questions = value;
+                        break;
+                    case 'time':
+                        this.timeSpent = value;
+                        break;
+                }
+                this.saveProgress();
+                this.updateDisplay();
+            },
+
+            saveProgress() {
+                localStorage.setItem('unit1Progress', JSON.stringify({
+                    topics: this.topics,
+                    questions: this.questions,
+                    timeSpent: this.timeSpent
+                }));
+            },
+
+            updateDisplay() {
+                const progressCards = document.querySelectorAll('.progress-card .progress-number');
+                progressCards[0].textContent = Math.round((this.topics.completed / this.topics.total) * 100) + '%';
+                progressCards[1].textContent = this.questions;
+                progressCards[2].textContent = Math.round(this.timeSpent) + 'h';
+            }
+        };
+
+        // Initialize progress tracking
+        document.addEventListener('DOMContentLoaded', () => {
+            progressTracking.loadProgress();
+        });
+    </script>
+</body>
+</html>

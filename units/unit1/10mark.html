@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1: Quantum Mechanics - 10 Mark Questions</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .questions-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .question {
+            font-weight: 500;
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .answer-section {
+            display: none;
+        }
+        
+        .answer-section.show {
+            display: block;
+        }
+        
+        .toggle-answer {
+            background: #1e3c72;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .toggle-answer:hover {
+            background: #2a5298;
+        }
+        
+        .answer-outline {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .answer-outline h3 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+        
+        .answer-outline ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .answer-outline li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .answer-outline li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1e3c72;
+        }
+        
+        .detailed-answer {
+            margin-top: 1.5rem;
+        }
+        
+        .detailed-answer h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+        
+        .detailed-answer p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .formula {
+            padding: 1rem;
+            background: #f1f1f1;
+            border-radius: 5px;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .reference-materials {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .reference-materials h4 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+        
+        .reference-materials ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .reference-materials li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .reference-materials a {
+            color: #1e3c72;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .reference-materials a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Engineering Physics</div>
+        <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </nav>
+
+    <div class="questions-content">
+        <h1>Unit 1: Quantum Mechanics - 10 Mark Questions</h1>
+        
+        <div class="question-card">
+            <div class="question">
+                1. Explain Einstein's photoelectric equation. Describe the experimental verification of photoelectric effect and its observations.
+            </div>
+            <button class="toggle-answer">
+                <i class="fas fa-lightbulb"></i> Show Answer Framework
+            </button>
+            <div class="answer-section">
+                <div class="answer-outline">
+                    <h3>Answer Framework:</h3>
+                    <ul>
+                        <li>Introduction to photoelectric effect (1 mark)</li>
+                        <li>Einstein's photoelectric equation and its components (2 marks)</li>
+                        <li>Experimental setup description (2 marks)</li>
+                        <li>Key observations and their significance (3 marks)</li>
+                        <li>Applications and conclusion (2 marks)</li>
+                    </ul>
+                </div>
+                
+                <div class="detailed-answer">
+                    <h3>Detailed Explanation:</h3>
+                    
+                    <h4>1. Introduction</h4>
+                    <p>The photoelectric effect is the emission of electrons from a metal surface when electromagnetic radiation of suitable frequency falls on it. This phenomenon demonstrates the quantum nature of light.</p>
+                    
+                    <h4>2. Einstein's Photoelectric Equation</h4>
+                    <div class="formula">
+                        hν = φ + KEmax
+                        where:
+                        h = Planck's constant
+                        ν = Frequency of incident radiation
+                        φ = Work function of the metal
+                        KEmax = Maximum kinetic energy of ejected electrons
+                    </div>
+                    
+                    <h4>3. Experimental Setup</h4>
+                    <p>The experimental setup consists of an evacuated glass tube containing two electrodes: a cathode (metal plate) and an anode. When light falls on the cathode, photoelectrons are emitted and collected by the anode.</p>
+                    
+                    <h4>4. Key Observations</h4>
+                    <ul>
+                        <li>Instantaneous emission of electrons</li>
+                        <li>Existence of threshold frequency</li>
+                        <li>Linear relationship between frequency and kinetic energy</li>
+                        <li>Independence of kinetic energy from intensity</li>
+                    </ul>
+                    
+                    <h4>5. Applications</h4>
+                    <p>The photoelectric effect has numerous applications including:</p>
+                    <ul>
+                        <li>Photoelectric cells</li>
+                        <li>Solar panels</li>
+                        <li>Light meters in cameras</li>
+                        <li>Automatic door openers</li>
+                    </ul>
+                </div>
+                
+                <div class="reference-materials">
+                    <h4>Reference Materials:</h4>
+                    <ul>
+                        <li>
+                            <a href="../../refrence all unit/UNIT 1/3Photoelectric effect.pptx">
+                                <i class="fas fa-file-powerpoint"></i> Detailed Presentation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../refrence all unit/UNIT 1/Unit - I problems.pdf">
+                                <i class="fas fa-file-pdf"></i> Practice Problems
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../refrence all unit/UNIT 1/e.physics unit 1.pdf">
+                                <i class="fas fa-file-pdf"></i> Comprehensive Notes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="question">
+                2. Derive time-independent Schrödinger wave equation and explain its significance in quantum mechanics.
+            </div>
+            <button class="toggle-answer">
+                <i class="fas fa-lightbulb"></i> Show Answer Framework
+            </button>
+            <div class="answer-section">
+                <div class="answer-outline">
+                    <h3>Answer Framework:</h3>
+                    <ul>
+                        <li>Need for wave equation in quantum mechanics (1 mark)</li>
+                        <li>Mathematical derivation (4 marks)</li>
+                        <li>Physical significance of wave function (2 marks)</li>
+                        <li>Boundary conditions and constraints (2 marks)</li>
+                        <li>Applications (1 mark)</li>
+                    </ul>
+                </div>
+                
+                <div class="detailed-answer">
+                    <h3>Detailed Explanation:</h3>
+                    
+                    <h4>1. Introduction</h4>
+                    <p>The Schrödinger equation is a fundamental equation in quantum mechanics that describes how the quantum state of a physical system changes with time.</p>
+                    
+                    <h4>2. Derivation</h4>
+                    <div class="formula">
+                        Starting from de Broglie relation: λ = h/p
+                        Through wave equation: d²ψ/dx² + k²ψ = 0
+                        Leading to: -ħ²/2m · d²ψ/dx² + V(x)ψ = Eψ
+                    </div>
+                    
+                    <h4>3. Physical Significance</h4>
+                    <ul>
+                        <li>Wave function (ψ) represents probability amplitude</li>
+                        <li>|ψ|² gives probability density</li>
+                        <li>Must be normalized: ∫|ψ|²dx = 1</li>
+                    </ul>
+                    
+                    <h4>4. Applications</h4>
+                    <p>Applications include:</p>
+                    <ul>
+                        <li>Particle in a box</li>
+                        <li>Quantum tunneling</li>
+                        <li>Hydrogen atom model</li>
+                    </ul>
+                </div>
+                
+                <div class="reference-materials">
+                    <h4>Reference Materials:</h4>
+                    <ul>
+                        <li>
+                            <a href="../../refrence all unit/UNIT 1/5Schrodinger eqn..pptx">
+                                <i class="fas fa-file-powerpoint"></i> Schrödinger Equation Slides
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../refrence all unit/UNIT 1/7 Box.pptx">
+                                <i class="fas fa-file-powerpoint"></i> Particle in Box Example
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Engineering Physics. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.toggle-answer').forEach(button => {
+            button.addEventListener('click', () => {
+                const answerSection = button.nextElementSibling;
+                answerSection.classList.toggle('show');
+                
+                if (answerSection.classList.contains('show')) {
+                    button.innerHTML = '<i class="fas fa-times"></i> Hide Answer Framework';
+                } else {
+                    button.innerHTML = '<i class="fas fa-lightbulb"></i> Show Answer Framework';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

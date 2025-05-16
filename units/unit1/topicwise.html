@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1: Quantum Mechanics - Topics</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .topic-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .topic-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .topic-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .topic-header i {
+            font-size: 2rem;
+            color: #1e3c72;
+        }
+        
+        .resources-list {
+            margin-top: 1rem;
+        }
+        
+        .resources-list a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            background: #1e3c72;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .resources-list a:hover {
+            background: #2a5298;
+        }
+
+        .simulations {
+            padding: 2rem 0;
+        }
+
+        .simulation-container {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .simulation-canvas {
+            width: 100%;
+            height: 300px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        .simulation-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin: 1rem 0;
+        }
+
+        .simulation-controls label {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .simulation-controls input[type="range"] {
+            width: 200px;
+        }
+
+        .simulation-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        button[data-control="pause"] {
+            padding: 0.5rem 1rem;
+            background: #1e3c72;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[data-control="pause"]:hover {
+            background: #2a5298;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Engineering Physics</div>
+        <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </nav>
+
+    <div class="topic-content">
+        <h1>Unit 1: Quantum Mechanics</h1>
+        
+        <div class="topic-card">
+            <div class="topic-header">
+                <i class="fas fa-atom"></i>
+                <h2>Classical Physics Limitations</h2>
+            </div>
+            <p>Understanding the limitations of classical physics and the need for quantum mechanics</p>
+            <div class="resources-list">
+                <a href="../../refrence all unit/UNIT 1/2Limitations of Classical Physics.pptx">
+                    <i class="fas fa-file-powerpoint"></i> Presentation
+                </a>
+                <a href="../../refrence all unit/UNIT 1/e.physics unit 1.pdf">
+                    <i class="fas fa-file-pdf"></i> Notes
+                </a>
+            </div>
+        </div>
+
+        <div class="topic-card">
+            <div class="topic-header">
+                <i class="fas fa-lightbulb"></i>
+                <h2>Photoelectric Effect</h2>
+            </div>
+            <p>Einstein's explanation of the photoelectric effect and its quantum nature</p>
+            <div class="resources-list">
+                <a href="../../refrence all unit/UNIT 1/3Photoelectric effect.pptx">
+                    <i class="fas fa-file-powerpoint"></i> Presentation
+                </a>
+                <a href="../../refrence all unit/UNIT 1/Unit - I problems.pdf">
+                    <i class="fas fa-file-pdf"></i> Practice Problems
+                </a>
+            </div>
+        </div>
+
+        <div class="topic-card">
+            <div class="topic-header">
+                <i class="fas fa-wave-square"></i>
+                <h2>de Broglie Wave Theory</h2>
+            </div>
+            <p>Wave-particle duality and matter waves</p>
+            <div class="resources-list">
+                <a href="../../refrence all unit/UNIT 1/4 de Broglie wave.pptx">
+                    <i class="fas fa-file-powerpoint"></i> Presentation
+                </a>
+            </div>
+        </div>
+
+        <div class="topic-card">
+            <div class="topic-header">
+                <i class="fas fa-square-root-alt"></i>
+                <h2>Schrödinger Wave Equation</h2>
+            </div>
+            <p>Fundamental equation of quantum mechanics and its applications</p>
+            <div class="resources-list">
+                <a href="../../refrence all unit/UNIT 1/5Schrodinger eqn..pptx">
+                    <i class="fas fa-file-powerpoint"></i> Presentation
+                </a>
+                <a href="../../refrence all unit/UNIT 1/7 Box.pptx">
+                    <i class="fas fa-file-powerpoint"></i> Particle in a Box
+                </a>
+            </div>
+        </div>
+
+        <div class="topic-card">
+            <div class="topic-header">
+                <i class="fas fa-microscope"></i>
+                <h2>Heisenberg Uncertainty Principle</h2>
+            </div>
+            <p>Fundamental limits of precision in quantum measurements</p>
+            <div class="resources-list">
+                <a href="../../refrence all unit/UNIT 1/Heisenberg uncertainity principle.pptx">
+                    <i class="fas fa-file-powerpoint"></i> Presentation
+                </a>
+                <a href="../../refrence all unit/UNIT 1/Lecture notes - Unit -I.pdf">
+                    <i class="fas fa-file-pdf"></i> Comprehensive Notes
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="simulations">
+        <h2>Interactive Simulations</h2>
+        
+        <div class="simulation-container" data-simulation="photoelectric">
+            <h3>Photoelectric Effect</h3>
+            <div class="simulation-canvas"></div>
+            <div class="simulation-controls">
+                <label>
+                    Light Frequency
+                    <input type="range" min="1" max="10" value="5" step="0.5" data-control="frequency">
+                </label>
+                <button data-control="pause">Pause</button>
+            </div>
+            <div class="simulation-description">
+                <p>Observe how electrons are emitted from the metal surface when light of sufficient frequency strikes it. Adjust the frequency to see how it affects electron emission.</p>
+            </div>
+        </div>
+    
+        <div class="simulation-container" data-simulation="waveparticle">
+            <h3>Wave-Particle Duality</h3>
+            <div class="simulation-canvas"></div>
+            <div class="simulation-controls">
+                <button data-control="pause">Pause</button>
+            </div>
+            <div class="simulation-description">
+                <p>Visualization of wave-particle duality showing both wave-like behavior and particle-like behavior of quantum objects.</p>
+            </div>
+        </div>
+    
+        <div class="simulation-container" data-simulation="quantum">
+            <h3>Quantum Tunneling</h3>
+            <div class="simulation-canvas"></div>
+            <div class="simulation-controls">
+                <label>
+                    Particle Energy
+                    <input type="range" min="1" max="10" value="5" step="0.5" data-control="energy">
+                </label>
+                <button data-control="pause">Pause</button>
+            </div>
+            <div class="simulation-description">
+                <p>Watch how quantum particles can tunnel through potential barriers, a phenomenon impossible in classical physics.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="content-wrapper">
+        <h1 class="section-title">Unit 1 Topics</h1>
+        
+        <section id="wave-particle-duality">
+            <h2>Wave-Particle Duality</h2>
+            <div class="simulation-container" id="wave-sim" data-sim-type="wave">
+                <!-- Wave simulation will be rendered here -->
+            </div>
+            <div class="topic-content">
+                <p>Wave-particle duality is a fundamental principle of quantum mechanics that describes the dual nature of matter and light.</p>
+                <!-- More content -->
+            </div>
+        </section>
+
+        <section id="quantum-mechanics">
+            <h2>Quantum Mechanics</h2>
+            <div class="simulation-container" id="quantum-sim" data-sim-type="quantum">
+                <!-- Quantum particle simulation will be rendered here -->
+            </div>
+            <div class="topic-content">
+                <p>Quantum mechanics describes the behavior of matter and energy at the atomic and subatomic scales.</p>
+                <!-- More content -->
+            </div>
+        </section>
+
+        <!-- Add more topic sections as needed -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Engineering Physics. All rights reserved.</p>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../simulations.js"></script>
+</body>
+</html>

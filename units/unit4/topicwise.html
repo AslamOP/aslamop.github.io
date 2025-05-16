@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 4: Nanomaterials - Topic-wise Questions | Engineering Physics</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../question-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .sidebar-nav {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 220px;
+            background: #f4f8fb;
+            border-right: 1px solid #e0e0e0;
+            height: 100vh;
+            padding-top: 2rem;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .sidebar-nav a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.7rem 1.2rem;
+            border-radius: 5px;
+            transition: background 0.2s, color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        .sidebar-nav a.active, .sidebar-nav a:hover {
+            background: #3498db;
+            color: #fff;
+        }
+        .main-content {
+            margin-left: 240px;
+            padding: 2rem 2rem 2rem 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 2000;
+        }
+        .topic-section {
+            margin-bottom: 3rem;
+        }
+        .topic-section h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 900px) {
+            .sidebar-nav {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Engineering Physics</div>
+        <div class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#units">Units</a>
+            <a href="../../index.html#formulas">Formulas</a>
+            <a href="../../index.html#pyq">Previous Year Questions</a>
+            <a href="../../index.html#resources">Resources</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="sidebar-nav">
+        <a href="2mark.html"><i class="fas fa-star"></i>2 Mark</a>
+        <a href="10mark.html"><i class="fas fa-certificate"></i>10 Mark</a>
+        <a href="15mark.html"><i class="fas fa-award"></i>15 Mark</a>
+        <a href="20mark.html"><i class="fas fa-trophy"></i>20 Mark</a>
+        <a href="topicwise.html" class="active"><i class="fas fa-list"></i>Topic-wise</a>
+    </div>
+
+    <div class="main-content">
+        <div class="unit-header">
+            <h1>Unit 4: Semiconductor Physics</h1>
+            <h2 id="topicwise">Topic-wise Questions</h2>
+        </div>
+
+        <div class="topic-section">
+            <h3>1. Intrinsic and Extrinsic Semiconductors</h3>
+            <div class="question-list">
+                <div class="question-card">
+                    <div class="question">
+                        <h4>a) Define intrinsic and extrinsic semiconductors. Provide examples.</h4>
+                    </div>
+                    <div class="solution">
+                        <p><strong>Answer:</strong> Intrinsic semiconductors are pure semiconductors without any impurities, such as silicon and germanium. Extrinsic semiconductors are doped with impurities to enhance conductivity and are classified as:
+                        <ul>
+                            <li><strong>n-type:</strong> Doped with pentavalent atoms (e.g., phosphorus).</li>
+                            <li><strong>p-type:</strong> Doped with trivalent atoms (e.g., boron).</li>
+                        </ul>
+                        Doping introduces free electrons or holes, improving conductivity.</p>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question">
+                        <h4>b) Compare direct energy gap versus indirect energy gap semiconductors.</h4>
+                    </div>
+                    <div class="solution">
+                        <p><strong>Answer:</strong> Direct energy gap semiconductors (e.g., GaAs) allow electrons to transition directly between the conduction and valence bands, emitting photons efficiently. Indirect energy gap semiconductors (e.g., Si) require a change in momentum, making them less efficient for light emission.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-section">
+            <h3>2. Band Gap and Carrier Concentration</h3>
+            <div class="question-list">
+                <div class="question-card">
+                    <div class="question">
+                        <h4>a) Explain the concept of the band gap in semiconductors.</h4>
+                    </div>
+                    <div class="solution">
+                        <p><strong>Answer:</strong> The band gap is the energy difference between the valence band and the conduction band in a semiconductor. Electrons must gain energy equal to the band gap to move from the valence band to the conduction band, enabling electrical conductivity. For example, silicon has a band gap of 1.1 eV.</p>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question">
+                        <h4>b) Derive the expression for carrier concentration in intrinsic semiconductors.</h4>
+                    </div>
+                    <div class="solution">
+                        <p><strong>Answer:</strong> The carrier concentration in intrinsic semiconductors is given by:
+                        <span class="formula">n<sub>i</sub> = sqrt(N<sub>c</sub>N<sub>v</sub>) exp(-E<sub>g</sub>/2kT)</span>,
+                        where:
+                        <ul>
+                            <li><strong>N<sub>c</sub>, N<sub>v</sub>:</strong> Effective density of states in the conduction and valence bands.</li>
+                            <li><strong>E<sub>g</sub>:</strong> Band gap energy.</li>
+                            <li><strong>k:</strong> Boltzmann constant.</li>
+                            <li><strong>T:</strong> Absolute temperature.</li>
+                        </ul>
+                        This equation shows that carrier concentration increases with temperature.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-section">
+            <h3>3. Hall Effect</h3>
+            <div class="question-list">
+                <div class="question-card">
+                    <div class="question">
+                        <h4>a) What is the Hall effect? Derive the expression for Hall voltage.</h4>
+                    </div>
+                    <div class="solution">
+                        <p><strong>Answer:</strong> The Hall effect occurs when a magnetic field is applied perpendicular to the current in a conductor or semiconductor, causing a voltage (Hall voltage) to develop across the material. The Hall voltage is given by:
+                        <span class="formula">V<sub>H</sub> = (IB)/(qnd)</span>,
+                        where:
+                        <ul>
+                            <li><strong>I:</strong> Current.</li>
+                            <li><strong>B:</strong> Magnetic field strength.</li>
+                            <li><strong>q:</strong> Charge of the carrier.</li>
+                            <li><strong>n:</strong> Carrier concentration.</li>
+                            <li><strong>d:</strong> Thickness of the material.</li>
+                        </ul>
+                        The Hall effect is used to determine carrier type (n or p) and carrier concentration.</p>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question">
+                        <h4>b) The Hall coefficient of a doped silicon sample is 3.66 x 10<sup>4</sup> m<sup>3</sup>/C and its resistivity is 8.93 x 10<sup>-3</sup> Ω·m. Calculate the density of charge carriers.</h4>
+                    </div>
+                    <div class="solution">
+                        <p><strong>Answer:</strong> The density of charge carriers (n) is calculated using the formula:
+                        <span class="formula">n = 1 / (R<sub>H</sub> · q)</span>,
+                        where:
+                        <ul>
+                            <li><strong>R<sub>H</sub>:</strong> Hall coefficient = 3.66 x 10<sup>4</sup> m<sup>3</sup>/C</li>
+                            <li><strong>q:</strong> Charge of an electron = 1.6 x 10<sup>-19</sup> C</li>
+                        </ul>
+                        Substituting the values, <span class="formula">n = 1 / (3.66 x 10<sup>4</sup> · 1.6 x 10<sup>-19</sup>)</span>. Simplify to find the result.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-section">
+            <h3>4. Semiconductor Diode Laser</h3>
+            <div class="question-list">
+                <div class="question-card">
+                    <div class="question">
+                        <h4>a) Describe the construction and working of a semiconductor diode laser.</h4>
+                    </div>
+                    <div class="solution">
+                        <p><strong>Answer:</strong> A semiconductor diode laser consists of a p-n junction diode made of direct band gap materials like GaAs. When forward biased, electrons and holes recombine at the junction, emitting coherent light. Key components include:
+                        <ul>
+                            <li><strong>Active region:</strong> Where recombination occurs.</li>
+                            <li><strong>Reflective surfaces:</strong> To form an optical cavity.</li>
+                            <li><strong>Power source:</strong> Provides the forward bias.</li>
+                        </ul>
+                        Applications include fiber-optic communication and barcode scanning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-section">
+            <h3>5. Mobility and Conductivity</h3>
+            <div class="question-list">
+                <div class="question-card">
+                    <div class="question">
+                        <h4>a) Define mobility and derive its relation with conductivity.</h4>
+                    </div>
+                    <div class="solution">
+                        <p><strong>Answer:</strong> Mobility (&mu;) is the measure of how quickly charge carriers move through a material under an electric field. Conductivity (&sigma;) is related to mobility by:
+                        <span class="formula">&sigma; = nq&mu;</span>,
+                        where:
+                        <ul>
+                            <li><strong>n:</strong> Carrier concentration.</li>
+                            <li><strong>q:</strong> Charge of the carrier.</li>
+                            <li><strong>&mu;:</strong> Mobility.</li>
+                        </ul>
+                        This equation shows that higher mobility and carrier concentration lead to better conductivity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'});" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Engineering Physics</h4>
+                <p>Your complete study companion</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="../../index.html#units">Units</a>
+                <a href="../../index.html#formulas">Formulas</a>
+                <a href="../../index.html#pyq">Previous Year Questions</a>
+                <a href="../../index.html#resources">Resources</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Engineering Physics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script>
+        // Highlight active sidebar link
+        const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

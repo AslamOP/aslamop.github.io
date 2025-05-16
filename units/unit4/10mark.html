@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 4: Nanomaterials - 10 Mark Questions | Engineering Physics</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../question-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .sidebar-nav {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 220px;
+            background: #f4f8fb;
+            border-right: 1px solid #e0e0e0;
+            height: 100vh;
+            padding-top: 2rem;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .sidebar-nav a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.7rem 1.2rem;
+            border-radius: 5px;
+            transition: background 0.2s, color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        .sidebar-nav a.active, .sidebar-nav a:hover {
+            background: #3498db;
+            color: #fff;
+        }
+        .main-content {
+            margin-left: 240px;
+            padding: 2rem 2rem 2rem 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 2000;
+        }
+        @media (max-width: 900px) {
+            .sidebar-nav {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Engineering Physics</div>
+        <div class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#units">Units</a>
+            <a href="../../index.html#formulas">Formulas</a>
+            <a href="../../index.html#pyq">Previous Year Questions</a>
+            <a href="../../index.html#resources">Resources</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="sidebar-nav">
+        <a href="2mark.html"><i class="fas fa-star"></i>2 Mark</a>
+        <a href="10mark.html" class="active"><i class="fas fa-certificate"></i>10 Mark</a>
+        <a href="15mark.html"><i class="fas fa-award"></i>15 Mark</a>
+        <a href="20mark.html"><i class="fas fa-trophy"></i>20 Mark</a>
+        <a href="topicwise.html"><i class="fas fa-list"></i>Topic-wise</a>
+    </div>
+
+    <div class="main-content">
+        <div class="unit-header">
+            <h1>Unit 4: Nanomaterials</h1>
+            <h2 id="10mark">10 Mark Questions</h2>
+        </div>
+        <div class="question-list">
+            <div class="question-card">
+                <div class="question">
+                    <h3>1. Explain the working principle of Atomic Force Microscope (AFM). Describe its construction and different modes of operation.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong></p>
+                    
+                    <h4>Working Principle:</h4>
+                    <p>AFM works by measuring the force between a sharp tip and the sample surface. The tip is mounted on a cantilever, and as it scans the surface, the force causes the cantilever to deflect, which is measured using a laser beam.</p>
+                    
+                    <h4>Construction:</h4>
+                    <ol>
+                        <li><strong>Scanning System</strong>
+                            <ul>
+                                <li>Piezoelectric scanner</li>
+                                <li>Sharp tip on cantilever</li>
+                                <li>Sample stage</li>
+                            </ul>
+                        </li>
+                        <li><strong>Detection System</strong>
+                            <ul>
+                                <li>Laser diode</li>
+                                <li>Photodetector</li>
+                                <li>Feedback electronics</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h4>Modes of Operation:</h4>
+                    <ol>
+                        <li><strong>Contact Mode</strong>
+                            <ul>
+                                <li>Tip in constant contact with surface</li>
+                                <li>Measures repulsive forces</li>
+                                <li>High resolution but can damage soft samples</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tapping Mode</strong>
+                            <ul>
+                                <li>Tip oscillates near surface</li>
+                                <li>Measures amplitude changes</li>
+                                <li>Better for soft samples</li>
+                            </ul>
+                        </li>
+                        <li><strong>Non-contact Mode</strong>
+                            <ul>
+                                <li>Tip oscillates above surface</li>
+                                <li>Measures attractive forces</li>
+                                <li>Lowest resolution but no sample damage</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h3>2. Describe the synthesis methods of quantum dots and explain their unique optical properties.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong></p>
+                    
+                    <h4>Synthesis Methods:</h4>
+                    <ol>
+                        <li><strong>Colloidal Synthesis</strong>
+                            <ul>
+                                <li>Solution-based method</li>
+                                <li>Precise control of size</li>
+                                <li>High quality and monodispersity</li>
+                            </ul>
+                        </li>
+                        <li><strong>Molecular Beam Epitaxy</strong>
+                            <ul>
+                                <li>Layer-by-layer growth</li>
+                                <li>High purity</li>
+                                <li>Controlled composition</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chemical Vapor Deposition</strong>
+                            <ul>
+                                <li>Gas-phase synthesis</li>
+                                <li>Scalable production</li>
+                                <li>Good for industrial applications</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h4>Optical Properties:</h4>
+                    <ol>
+                        <li><strong>Size-dependent Emission</strong>
+                            <ul>
+                                <li>Band gap varies with size</li>
+                                <li>Emission wavelength tunable</li>
+                                <li>Narrow emission spectra</li>
+                            </ul>
+                        </li>
+                        <li><strong>High Quantum Yield</strong>
+                            <ul>
+                                <li>Efficient light emission</li>
+                                <li>Bright fluorescence</li>
+                                <li>Stable against photobleaching</li>
+                            </ul>
+                        </li>
+                        <li><strong>Applications</strong>
+                            <ul>
+                                <li>LEDs and displays</li>
+                                <li>Solar cells</li>
+                                <li>Biological imaging</li>
+                                <li>Optical sensors</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h3>3. Explain the properties and applications of graphene. Discuss its synthesis methods.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong></p>
+                    
+                    <h4>Properties:</h4>
+                    <ol>
+                        <li><strong>Physical Properties</strong>
+                            <ul>
+                                <li>Single layer of carbon atoms</li>
+                                <li>High mechanical strength</li>
+                                <li>Excellent thermal conductivity</li>
+                            </ul>
+                        </li>
+                        <li><strong>Electronic Properties</strong>
+                            <ul>
+                                <li>High electron mobility</li>
+                                <li>Zero band gap semiconductor</li>
+                                <li>Ballistic transport</li>
+                            </ul>
+                        </li>
+                        <li><strong>Optical Properties</strong>
+                            <ul>
+                                <li>Transparent to visible light</li>
+                                <li>High optical absorption</li>
+                                <li>Unique Raman spectrum</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h4>Synthesis Methods:</h4>
+                    <ol>
+                        <li><strong>Mechanical Exfoliation</strong>
+                            <ul>
+                                <li>Peeling from graphite</li>
+                                <li>High quality</li>
+                                <li>Limited scalability</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chemical Vapor Deposition</strong>
+                            <ul>
+                                <li>Growth on metal substrates</li>
+                                <li>Large area production</li>
+                                <li>Good quality</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chemical Reduction</strong>
+                            <ul>
+                                <li>Reduction of graphene oxide</li>
+                                <li>Mass production</li>
+                                <li>Lower quality</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h4>Applications:</h4>
+                    <ul>
+                        <li>Transparent electrodes</li>
+                        <li>High-speed electronics</li>
+                        <li>Energy storage devices</li>
+                        <li>Composites and coatings</li>
+                        <li>Sensors and biosensors</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question">
+                    <h4>1. Describe the construction and working of a semiconductor diode laser.</h4>
+                </div>
+            </div>
+            <div class="question-card">
+                <div class="question">
+                    <h4>2. Derive the expression for carrier concentration in intrinsic semiconductors.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'});" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Engineering Physics</h4>
+                <p>Your complete study companion</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="../../index.html#units">Units</a>
+                <a href="../../index.html#formulas">Formulas</a>
+                <a href="../../index.html#pyq">Previous Year Questions</a>
+                <a href="../../index.html#resources">Resources</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Engineering Physics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script>
+        // Highlight active sidebar link
+        const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

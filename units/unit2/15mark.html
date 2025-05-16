@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2: Lasers & Fiber Optics - 15 Mark Questions | Engineering Physics</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../question-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .sidebar-nav {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 220px;
+            background: #f4f8fb;
+            border-right: 1px solid #e0e0e0;
+            height: 100vh;
+            padding-top: 2rem;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .sidebar-nav a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.7rem 1.2rem;
+            border-radius: 5px;
+            transition: background 0.2s, color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        .sidebar-nav a.active, .sidebar-nav a:hover {
+            background: #3498db;
+            color: #fff;
+        }
+        .main-content {
+            margin-left: 240px;
+            padding: 2rem 2rem 2rem 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 2000;
+        }
+        @media (max-width: 900px) {
+            .sidebar-nav {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Engineering Physics</div>
+        <div class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#units">Units</a>
+            <a href="../../index.html#formulas">Formulas</a>
+            <a href="../../index.html#pyq">Previous Year Questions</a>
+            <a href="../../index.html#resources">Resources</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="sidebar-nav">
+        <a href="2mark.html"><i class="fas fa-star"></i>2 Mark</a>
+        <a href="10mark.html"><i class="fas fa-certificate"></i>10 Mark</a>
+        <a href="15mark.html" class="active"><i class="fas fa-award"></i>15 Mark</a>
+        <a href="20mark.html"><i class="fas fa-trophy"></i>20 Mark</a>
+        <a href="topicwise.html"><i class="fas fa-list"></i>Topic-wise</a>
+    </div>
+
+    <div class="main-content">
+        <div class="unit-header">
+            <h1>Unit 2: Lasers & Fiber Optics</h1>
+            <h2 id="15mark">15 Mark Questions</h2>
+        </div>
+        <div class="question-list">
+            <div class="question-card">
+                <div class="question">
+                    <h3>1. Explain the process of population inversion and pumping in lasers. Discuss the different pumping methods used in lasers with examples.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong></p>
+                    <h4>Population Inversion:</h4>
+                    <ul>
+                        <li>Population inversion is the condition where more atoms are in an excited state than in the ground state.</li>
+                        <li>Essential for laser action to achieve net stimulated emission.</li>
+                    </ul>
+                    <h4>Pumping Methods:</h4>
+                    <ul>
+                        <li><strong>Optical Pumping:</strong> Using light (e.g., flash lamps) to excite atoms (e.g., Ruby laser).</li>
+                        <li><strong>Electrical Pumping:</strong> Using electric discharge (e.g., He-Ne, CO₂ lasers).</li>
+                        <li><strong>Chemical Pumping:</strong> Using chemical reactions (e.g., chemical lasers).</li>
+                        <li><strong>Direct Conversion:</strong> Using electrical current in semiconductors (e.g., diode lasers).</li>
+                    </ul>
+                    <h4>Examples:</h4>
+                    <ul>
+                        <li>Nd:YAG laser (optical pumping)</li>
+                        <li>CO₂ laser (electrical pumping)</li>
+                        <li>Semiconductor laser (direct conversion)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="question-card">
+                <div class="question">
+                    <h3>2. With neat diagrams, explain the construction and working of Nd:YAG, CO₂, and semiconductor lasers. Mention their applications.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong></p>
+                    <h4>Nd:YAG Laser:</h4>
+                    <ul>
+                        <li>Solid-state laser using Neodymium-doped Yttrium Aluminum Garnet as the active medium.</li>
+                        <li>Optically pumped, four-level system.</li>
+                        <li>Applications: Material processing, medical surgery, range finding.</li>
+                    </ul>
+                    <h4>CO₂ Laser:</h4>
+                    <ul>
+                        <li>Gas laser using CO₂ as the active medium.</li>
+                        <li>Electrically pumped, vibrational energy transitions.</li>
+                        <li>Applications: Cutting, welding, medical procedures.</li>
+                    </ul>
+                    <h4>Semiconductor Laser:</h4>
+                    <ul>
+                        <li>Uses p-n junction as the active region.</li>
+                        <li>Direct electrical pumping.</li>
+                        <li>Applications: Optical communication, barcode scanners, laser pointers.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="question-card">
+                <div class="question">
+                    <h3>3. Explain the structure, types, and applications of optical fibers. Discuss the advantages of optical fiber communication over conventional systems.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong></p>
+                    <h4>Structure:</h4>
+                    <ul>
+                        <li>Core, cladding, and protective coating.</li>
+                        <li>Total internal reflection guides light through the core.</li>
+                    </ul>
+                    <h4>Types:</h4>
+                    <ul>
+                        <li>Step-index and graded-index fibers.</li>
+                        <li>Single-mode and multimode fibers.</li>
+                    </ul>
+                    <h4>Applications:</h4>
+                    <ul>
+                        <li>Telecommunications, internet, medical imaging, sensors.</li>
+                    </ul>
+                    <h4>Advantages:</h4>
+                    <ul>
+                        <li>High bandwidth, low loss, immunity to electromagnetic interference, secure data transmission.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="question-card">
+                <div class="question">
+                    <h3>4. Derive the expression for numerical aperture and explain its significance in optical fibers.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong></p>
+                    <h4>Numerical Aperture (NA):</h4>
+                    <ul>
+                        <li>NA = sqrt(n<sub>core</sub><sup>2</sup> - n<sub>cladding</sub><sup>2</sup>)</li>
+                        <li>Determines the light-gathering ability and number of modes in the fiber.</li>
+                        <li>Higher NA: More light accepted, more modes (multimode fiber).</li>
+                        <li>Lower NA: Single mode, less dispersion, better for long-distance communication.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="question-card">
+                <div class="question">
+                    <h3>5. Discuss the advantages and applications of lasers and optical fibers in modern technology. Compare optical fiber communication with conventional communication systems.</h3>
+                </div>
+                <div class="solution">
+                    <p><strong>Answer:</strong></p>
+                    <h4>Advantages of Lasers:</h4>
+                    <ul>
+                        <li>High intensity, coherence, monochromaticity, directionality.</li>
+                        <li>Precision in cutting, welding, surgery, measurement.</li>
+                    </ul>
+                    <h4>Applications of Lasers:</h4>
+                    <ul>
+                        <li>Industry (cutting, welding, marking)</li>
+                        <li>Medicine (surgery, dermatology, ophthalmology)</li>
+                        <li>Communication (fiber optics, data transfer)</li>
+                        <li>Research (spectroscopy, atomic physics)</li>
+                    </ul>
+                    <h4>Advantages of Optical Fibers:</h4>
+                    <ul>
+                        <li>High bandwidth, low loss, immunity to EMI, secure data transmission.</li>
+                        <li>Lightweight, flexible, easy installation.</li>
+                    </ul>
+                    <h4>Applications of Optical Fibers:</h4>
+                    <ul>
+                        <li>Telecommunications, internet, medical imaging, sensors.</li>
+                    </ul>
+                    <h4>Comparison with Conventional Communication:</h4>
+                    <ul>
+                        <li>Optical fiber: Higher bandwidth, lower loss, more secure, less interference.</li>
+                        <li>Conventional (copper): Lower bandwidth, higher loss, susceptible to EMI.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'});" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Engineering Physics</h4>
+                <p>Your complete study companion</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="../../index.html#units">Units</a>
+                <a href="../../index.html#formulas">Formulas</a>
+                <a href="../../index.html#pyq">Previous Year Questions</a>
+                <a href="../../index.html#resources">Resources</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Engineering Physics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script>
+        // Highlight active sidebar link
+        const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 

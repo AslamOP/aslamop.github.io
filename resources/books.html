@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Physics - Book Resources</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .books-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .book-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .book-cover {
+            position: relative;
+            width: 100%;
+            padding-top: 140%; /* Book cover aspect ratio */
+            background: #f1f1f1;
+        }
+
+        .book-cover img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .book-info {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-info h3 {
+            margin: 0 0 1rem 0;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+
+        .book-meta {
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .book-meta p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.25rem 0;
+        }
+
+        .book-meta i {
+            color: #1e3c72;
+            width: 20px;
+        }
+
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: #1e3c72;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: auto;
+            transition: background 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: #2a5298;
+        }
+
+        .section-header {
+            margin: 3rem 0 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #1e3c72;
+        }
+
+        .filter-controls {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: #f1f1f1;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .filter-button.active {
+            background: #1e3c72;
+            color: white;
+        }
+
+        .filter-button:hover {
+            background: #2a5298;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-controls {
+                flex-direction: column;
+            }
+
+            .filter-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Engineering Physics</div>
+        <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </nav>
+
+    <div class="books-content">
+        <h1>Book Resources</h1>
+
+        <div class="filter-controls">
+            <button class="filter-button active">All</button>
+            <button class="filter-button">Textbooks</button>
+            <button class="filter-button">Reference Books</button>
+            <button class="filter-button">Study Materials</button>
+        </div>
+
+        <!-- Core Textbooks -->
+        <section>
+            <h2 class="section-header">Core Textbooks</h2>
+            <div class="resources-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="../assets/quantum-thumb.jpg" alt="Engineering Physics Textbook">
+                    </div>
+                    <div class="book-info">
+                        <h3>Engineering Physics</h3>
+                        <div class="book-meta">
+                            <p><i class="fas fa-user"></i> V. Rajendran</p>
+                            <p><i class="fas fa-calendar"></i> 2011</p>
+                            <p><i class="fas fa-file-pdf"></i> PDF Format</p>
+                        </div>
+                        <a href="../refrence all unit/V_Rajendran_Engineering_physics_2011,_Tata_McGraw_Hill_libgen_lc.pdf" class="download-button">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Add more book cards here -->
+            </div>
+        </section>
+
+        <!-- Study Materials -->
+        <section>
+            <h2 class="section-header">Study Materials</h2>
+            <div class="resources-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="../assets/quantum-thumb.jpg" alt="Study Material">
+                    </div>
+                    <div class="book-info">
+                        <h3>Updated Study Material</h3>
+                        <div class="book-meta">
+                            <p><i class="fas fa-book"></i> Comprehensive Notes</p>
+                            <p><i class="fas fa-clock"></i> Latest Edition</p>
+                            <p><i class="fas fa-file-pdf"></i> PDF Format</p>
+                        </div>
+                        <a href="../refrence all unit/Updated study material_Eng. Physics.pdf" class="download-button">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Add more study material cards -->
+            </div>
+        </section>
+
+        <!-- Unit-wise Resources -->
+        <section>
+            <h2 class="section-header">Unit-wise Resources</h2>
+            <div class="resources-grid">
+                <!-- Unit 1 -->
+                <div class="book-card">
+                    <div class="book-info">
+                        <h3>Unit 1: Quantum Mechanics</h3>
+                        <div class="book-meta">
+                            <p><i class="fas fa-book"></i> Complete Notes</p>
+                            <p><i class="fas fa-tasks"></i> Problems & Solutions</p>
+                        </div>
+                        <a href="../refrence all unit/UNIT 1/e.physics unit 1.pdf" class="download-button">
+                            <i class="fas fa-download"></i> Download Notes
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Add cards for other units -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Engineering Physics. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Resource filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const sections = document.querySelectorAll('section');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                // Filter resources based on selection
+                const filter = button.textContent;
+                
+                if (filter === 'All') {
+                    sections.forEach(section => section.style.display = 'block');
+                } else {
+                    sections.forEach(section => {
+                        if (section.querySelector('h2').textContent.includes(filter)) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

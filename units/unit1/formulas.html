@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1: Quantum Mechanics - Formulas</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/contrib/auto-render.min.js"></script>
+    <style>
+        .formula-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .formula-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .formula-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-left: 4px solid #1e3c72;
+            background: #f8f9fa;
+        }
+        
+        .formula-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #1e3c72;
+        }
+        
+        .formula-equation {
+            font-family: 'KaTeX_Math', serif;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            padding: 0.5rem;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .formula-explanation {
+            margin-top: 0.5rem;
+            color: #666;
+        }
+        
+        .variables-list {
+            margin-top: 0.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        .variables-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        .related-problems {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .related-problems a {
+            color: #1e3c72;
+            text-decoration: none;
+        }
+
+        .related-problems a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Engineering Physics</div>
+        <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </nav>
+
+    <div class="formula-content">
+        <h1>Unit 1: Quantum Mechanics - Important Formulas</h1>
+        
+        <div class="formula-section">
+            <h2>Photoelectric Effect</h2>
+            
+            <div class="formula-item">
+                <div class="formula-title">Einstein's Photoelectric Equation</div>
+                <div class="formula-equation">hν = φ + KEmax</div>
+                <div class="formula-explanation">Relates the energy of incident photons to the work function and maximum kinetic energy of ejected electrons</div>
+                <ul class="variables-list">
+                    <li>h = Planck's constant (6.626 × 10⁻³⁴ J·s)</li>
+                    <li>ν = Frequency of incident light</li>
+                    <li>φ = Work function of the metal</li>
+                    <li>KEmax = Maximum kinetic energy of ejected electrons</li>
+                </ul>
+                <div class="related-problems">
+                    <a href="../../refrence all unit/UNIT 1/Unit - I problems.pdf"><i class="fas fa-external-link-alt"></i> Practice Problems</a>
+                </div>
+            </div>
+
+            <div class="formula-item">
+                <div class="formula-title">Threshold Wavelength</div>
+                <div class="formula-equation">λ₀ = hc/φ</div>
+                <div class="formula-explanation">Maximum wavelength of light that can cause photoelectric emission</div>
+                <ul class="variables-list">
+                    <li>λ₀ = Threshold wavelength</li>
+                    <li>c = Speed of light (3 × 10⁸ m/s)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="formula-section">
+            <h2>de Broglie Wave Theory</h2>
+            
+            <div class="formula-item">
+                <div class="formula-title">de Broglie Wavelength</div>
+                <div class="formula-equation">λ = h/p = h/mv</div>
+                <div class="formula-explanation">Wavelength associated with a particle of momentum p</div>
+                <ul class="variables-list">
+                    <li>λ = de Broglie wavelength</li>
+                    <li>p = Momentum of the particle</li>
+                    <li>m = Mass of the particle</li>
+                    <li>v = Velocity of the particle</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="formula-section">
+            <h2>Heisenberg Uncertainty Principle</h2>
+            
+            <div class="formula-item">
+                <div class="formula-title">Position-Momentum Uncertainty</div>
+                <div class="formula-equation">Δx·Δp ≥ ħ/2</div>
+                <div class="formula-explanation">Fundamental limit on simultaneous measurement of position and momentum</div>
+                <ul class="variables-list">
+                    <li>Δx = Uncertainty in position</li>
+                    <li>Δp = Uncertainty in momentum</li>
+                    <li>ħ = h/2π (reduced Planck's constant)</li>
+                </ul>
+            </div>
+
+            <div class="formula-item">
+                <div class="formula-title">Energy-Time Uncertainty</div>
+                <div class="formula-equation">ΔE·Δt ≥ ħ/2</div>
+                <div class="formula-explanation">Fundamental limit on simultaneous measurement of energy and time</div>
+                <ul class="variables-list">
+                    <li>ΔE = Uncertainty in energy</li>
+                    <li>Δt = Uncertainty in time</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="formula-section">
+            <h2>Schrödinger Wave Equation</h2>
+            
+            <div class="formula-item">
+                <div class="formula-title">Time-Independent Schrödinger Equation</div>
+                <div class="formula-equation">-ħ²/2m · d²ψ/dx² + V(x)ψ = Eψ</div>
+                <div class="formula-explanation">Describes quantum states and their corresponding energies</div>
+                <ul class="variables-list">
+                    <li>ψ = Wave function</li>
+                    <li>V(x) = Potential energy function</li>
+                    <li>E = Total energy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Engineering Physics. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

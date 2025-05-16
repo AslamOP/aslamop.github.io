@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2 Formulas - Laser & Fiber Optics</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: #f7f9fa; }
+        .container { max-width: 700px; margin: 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 32px 24px 24px 24px; }
+        .formula-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+        .formula-header i { font-size: 2.2rem; color: #3a7bd5; }
+        .formula-intro { color: #444; font-size: 1.08rem; margin-bottom: 24px; }
+        .formula-section { margin-bottom: 32px; }
+        .formula-section h2 { color: #3a7bd5; font-size: 1.2rem; margin-bottom: 12px; border-left: 4px solid #3a7bd5; padding-left: 10px; }
+        .formula-card { background: #f0f4fa; border-left: 5px solid #3a7bd5; border-radius: 8px; margin-bottom: 16px; padding: 16px 18px; font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace; font-size: 1.08rem; color: #222; box-shadow: 0 2px 8px rgba(58,123,213,0.06); }
+        .formula-card strong { font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace; font-size: 1.13rem; color: #1a237e; }
+        .back-link { display: inline-block; margin-top: 24px; color: #3a7bd5; text-decoration: none; font-weight: 500; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="formula-header">
+            <i class="fas fa-lightbulb"></i>
+            <h1>Unit 2: Laser & Fiber Optics - Formula Sheet</h1>
+        </div>
+        <div class="formula-intro">
+            <p>Essential formulas for Lasers and Fiber Optics, including Einstein coefficients, population inversion, numerical aperture, acceptance angle, and more. Use this as a quick reference for your studies and exams.</p>
+        </div>
+        <section class="formula-section">
+            <h2>Laser Physics</h2>
+            <div class="formula-card">
+                <strong>B<sub>12</sub> &rho;(&nu;) = B<sub>21</sub> &rho;(&nu;) + A<sub>21</sub></strong><br>
+                <span style="font-size:0.98em; color:#444;">This equation relates the probabilities of absorption, stimulated emission, and spontaneous emission in a two-level system.</span>
+            </div>
+            <div class="formula-card">
+                <strong>N<sub>2</sub> &gt; N<sub>1</sub></strong><br>
+                <span style="font-size:0.98em; color:#444;">Population inversion condition, essential for achieving net stimulated emission in lasers.</span>
+            </div>
+            <div class="formula-card">
+                <strong>E = h&nu;</strong><br>
+                <span style="font-size:0.98em; color:#444;">Energy of a laser photon, where h is Planck's constant and &nu; is the frequency of light.</span>
+            </div>
+        </section>
+        <section class="formula-section">
+            <h2>Fiber Optics</h2>
+            <div class="formula-card">
+                <strong>NA = sqrt(n<sub>1</sub><sup>2</sup> - n<sub>2</sub><sup>2</sup>)</strong><br>
+                <span style="font-size:0.98em; color:#444;">Numerical aperture, indicating the light-gathering ability of the fiber.</span>
+            </div>
+            <div class="formula-card">
+                <strong>&theta;<sub>max</sub> = sin<sup>-1</sup>(NA)</strong><br>
+                <span style="font-size:0.98em; color:#444;">Acceptance angle, the maximum angle for light to enter the fiber and be guided.</span>
+            </div>
+            <div class="formula-card">
+                <strong>V = (2&pi;a/&lambda;) NA</strong><br>
+                <span style="font-size:0.98em; color:#444;">V-number, determining the number of modes in the fiber, where a is the core radius and &lambda; is the wavelength.</span>
+            </div>
+        </section>
+        <a href="../../index.html" class="back-link">&larr; Back to Home</a>
+    </div>
+</body>
+</html>
